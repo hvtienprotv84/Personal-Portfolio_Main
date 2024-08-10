@@ -6,7 +6,7 @@
 - NextJS
 - TypeScript 
 - Tailwind CSS 
-- Framer Motion 
+- Framer Motion  
 - GSAP
 - Responsive Website và Mobile
 
