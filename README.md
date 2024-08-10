@@ -3,7 +3,7 @@
 </div>  
 
 <div align="center" width="50">
-<img src="./public/qr.png" alt="QR Code" width="300" />
+<img src="./public/qr.png" alt="QR Code" width="200" />
 </div>  
  
 - ReactJS  
