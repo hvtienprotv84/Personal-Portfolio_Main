@@ -1,0 +1,109 @@
+@keyframes marquee {
+    0% {
+      right: 0;
+    }
+    100% {
+      right: -550%;
+    }
+  }
+  .animate_right {
+    animation: marquee 20s linear infinite;
+    transform: translate(0, -50%);
+  }
+  
+  .animate_right:hover {
+    animation-play-state: paused;
+  }
+  
+  @screen sm {
+    @keyframes marquee {
+      0% {
+        right: 0;
+      }
+      100% {
+        right: -340%;
+      }
+    }
+    .animate_right {
+      animation: marquee 20s linear infinite;
+      transform: translate(0, -50%);
+    }
+  }
+  
+  @screen md {
+    @keyframes marquee {
+      0% {
+        right: 0;
+      }
+      100% {
+        right: -355%;
+      }
+    }
+    .animate_right {
+      animation: marquee 20s linear infinite;
+      transform: translate(0, -50%);
+    }
+  }
+  
+  @screen lg {
+    @keyframes marquee {
+      0% {
+        right: 0;
+      }
+      100% {
+        right: -300%;
+      }
+    }
+    .animate_right {
+      animation: marquee 20s linear infinite;
+      transform: translate(0, -50%);
+    }
+  }
+  
+  @screen xl {
+    @keyframes marquee {
+      0% {
+        right: 0;
+      }
+      100% {
+        right: -200%;
+      }
+    }
+    .animate_right {
+      animation: marquee 20s linear infinite;
+      transform: translate(0, -50%);
+    }
+  }
+  
+  .rotate {
+    animation: rotation 1s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotate:hover {
+    animation-play-state: paused;
+  }
+  
+  .heartbeat {
+    animation: beat 0.3s infinite alternate;
+    transform-origin: center;
+  }
+  
+  @keyframes beat {
+    to {
+      transform: scale(1.02);
+    }
+  }
+  
+  .heartbeat:hover {
+    animation-play-state: paused;
+  }
+  
