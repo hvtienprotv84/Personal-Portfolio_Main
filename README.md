@@ -8,7 +8,7 @@
 - Tailwind CSS 
 - Framer Motion  
 - GSAP
-- Responsive Website và Mobile
+- Responsive Website và Mobile 
  
 ## Run
  
