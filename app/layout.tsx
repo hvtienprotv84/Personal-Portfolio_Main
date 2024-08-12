@@ -14,7 +14,10 @@ export const metadata: Metadata = {
   title: "Huỳnh Vĩnh Tiến - Personal Portfolio",
   description:
     "Frontend Engineer and Web Designer, currently at Kora. Focused on interfaces and experiences, working remotely from Lagos, Nigeria.",
-  generator: "Next.js",
+    icons: {
+      icon: "/logo_1.png",  // Đảm bảo đường dẫn đúng
+    },
+    generator: "Next.js",
   applicationName: "Huỳnh Vĩnh Tiến",
   keywords: [
     "freelance",
