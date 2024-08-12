@@ -15,7 +15,7 @@ const Reviews = () => {
         className={`relative mb-16 flex w-full flex-col items-center justify-center gap-10  text-[#e4ded7] sm:items-center lg:max-w-[1440px]`}
       >
         <AnimatedWords2
-          title={"EDUCATION"}
+          title={"experience"}
           style={`flex max-w-[500px] flex-col items-start text-left pr-5 ${monaSans.className} font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center lg:text-center text-[clamp(70px,14vw,155.04px)]`}
         />
         <AnimatedBody
@@ -35,6 +35,7 @@ const Reviews = () => {
               profileImg={review.profileImg}
               testimonial={review.testimonial}
               title_name={review.title_name}
+              year_exp={review.year_exp}
               index={index}
             />
           );

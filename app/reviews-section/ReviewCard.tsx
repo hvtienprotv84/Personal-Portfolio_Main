@@ -15,6 +15,7 @@ const BlogCard = ({
   profileImg,
   testimonial,
   title_name,
+  year_exp,
   index,
 } : reviewProps) => {
   const abbreviateName = (name: string): string => {
@@ -78,6 +79,9 @@ const BlogCard = ({
           <p className="text-[12px] lg:text-xl font-[500] leading-[16px] text-[#95979D]">
             {role}: {company}
           </p>
+          <h4>
+            {year_exp}
+          </h4>
         </div>
       </div>
     </motion.div>

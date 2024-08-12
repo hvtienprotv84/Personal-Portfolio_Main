@@ -14,6 +14,7 @@ export type reviewProps = {
   testimonial: string;
   index: number;
   title_name: string;
+  year_exp: string;
 };
 
 export const reviewDetails = [
@@ -23,6 +24,7 @@ export const reviewDetails = [
     company: "Software Engineer",
     profileImg: alan,
     title_name: "Đại Học Công Nghệ TP.HCM",
+    year_exp: "2020 - 2024",
     testimonial:`🡢 Ngành học: Công Nghệ Thông Tin \n🡢 Chuyên ngành: Công Nghệ Phần Mềm \n🡢 GPA: 8.5/10 \n🡢 Tốt Nghiệp Loại Giỏi Toàn Khóa Học.`,
   },
   {
@@ -31,6 +33,7 @@ export const reviewDetails = [
     company: "Front-End Developer",
     profileImg: alan,
     title_name: "Công ty TNHH Giải Pháp và Công Nghệ",
+    year_exp: "Th 4, 2024 - Th 7, 2024",
     testimonial: "🡢 Công nghệ sử dụng cho dự án: ReactJS, Tailwind CSS, Github,... \n🡢 Top 1. Sinh Viên Thực Tập Xuất Sắc",
   },
   // {
