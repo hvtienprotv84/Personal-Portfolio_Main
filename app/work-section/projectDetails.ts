@@ -27,8 +27,8 @@ export const devProjects = [
     description:
       "Built specifically for an AI startup, this website lets them present cutting-edge AI data processing solutions tailored to their customers' needs.",
     technologies: ["VueJS", "Tailwind CSS"],
-    github: "/",
-    demo: "/",
+    github: "https://github.com/hvtienprotv84/VueJS_LandingPage",
+    demo: "https://vue-js-landing-page-puce.vercel.app/",
     image: require(".//../../public/projects/vue.webp"),
     available: true,
   },
