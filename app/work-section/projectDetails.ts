@@ -16,8 +16,8 @@ export const devProjects = [
     description:
       "This is a website for a Fintech Startup to showcase their innovative solutions tailored to meet the evolving needs of their clients.",
     technologies: ["ReactJS", "Tailwind CSS"],
-    github: "/",
-    demo: "/",
+    github: "https://github.com/hvtienprotv84/Portfolio_ReactJS_TypeScript_Multiple-Languages",
+    demo: "https://portfolio-react-js-type-script-multiple-languages.vercel.app/",
     image: require(".//../../public/projects/react.webp"),
     available: true,
   },
