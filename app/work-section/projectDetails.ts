@@ -38,8 +38,8 @@ export const devProjects = [
     description:
       "A website built for a software startup and small business, to showcase their services and mark their online presence.",
     technologies: ["Angular", "TypeScript", "CSS"],
-    github: "/",
-    demo: "/",
+    github: "https://github.com/hvtienprotv84/Angular_LandingPage",
+    demo: "https://angular-landing-page-seven.vercel.app/",
     image: require(".//../../public/projects/angular.png"),
     available: true,
   },
