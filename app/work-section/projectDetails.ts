@@ -60,8 +60,8 @@ export const devProjects = [
     description:
       "SkyWatch is a convenient and user-friendly tool that allows you to quickly and easily check the current weather and forecast for the next 2 days in any city.",
     technologies: ["NuxtJS","TypeScript", "Tailwind CSS", "Vite"],
-    github: "/",
-    demo: "/",
+    github: "https://github.com/hvtienprotv84/NuxtJS_Portfolio_First",
+    demo: "https://nuxt-js-portfolio-first.vercel.app/",
     image: require(".//../../public/projects/nuxt.png"),
     available: true,
   },
