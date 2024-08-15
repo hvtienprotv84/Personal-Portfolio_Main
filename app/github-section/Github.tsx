@@ -1,17 +1,7 @@
-import React from 'react'
-import GitHubCalendar from 'react-github-calendar';
-
-// export default function Github() {
-//     return (
-//         <p>
-//             <GitHubCalendar username="hvtienprotv84" />
-//         </p>
-//     )
-// }
-
 import "../animations/animate.css";
 import { motion } from "framer-motion";
 import { imageAnimation } from "../animations/animations";
+import GitHubCalendar from 'react-github-calendar';
 
 const Github = () => {
   return (
