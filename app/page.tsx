@@ -15,6 +15,7 @@ const About2 = dynamic(() => import("./about-section2/About"));
 const About3 = dynamic(() => import("./about-section3/About"));
 const Blog2 = dynamic(() => import("./blog-section2/BlogGrid"));
 // const Blog = dynamic(() => import("./blog-section/BlogGrid"));
+const Github = dynamic(() => import("./github-section/Github"));
 const Contact = dynamic(() => import("./contact-section/Contact"));
 const Footer = dynamic(() => import("./footer/Footer"));
 
@@ -49,6 +50,7 @@ export default function Home() {
         <About3 />
         <Blog2 />
         <Reviews/>
+        <Github/>
         {/* <About /> */}
         {/* <Blog /> */}
         <Contact />

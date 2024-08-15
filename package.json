@@ -1,5 +1,5 @@
 {
-  "homepage" : "https://hvtienprotv84.github.io/Personal_Portfolio_Main",
+  "homepage": "https://hvtienprotv84.github.io/Personal_Portfolio_Main",
   "name": "folio-v1",
   "version": "0.1.0",
   "private": true,
@@ -16,6 +16,8 @@
     "@fortawesome/free-brands-svg-icons": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mantine/core": "^7.12.1",
+    "@mantine/hooks": "^7.12.1",
     "@tailwindcss/line-clamp": "^0.4.2",
     "@vercel/analytics": "^0.1.11",
     "blobity": "^0.2.3",
@@ -26,6 +28,7 @@
     "next": "13.2.3",
     "react": "^18.2.0",
     "react-dom": "18.2.0",
+    "react-github-calendar": "^4.2.2",
     "react-intersection-observer": "^9.4.3",
     "resize-observer-polyfill": "^1.5.1",
     "scroller-motion": "^1.2.3",
