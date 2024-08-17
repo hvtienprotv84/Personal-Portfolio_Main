@@ -120,10 +120,10 @@ const Hero = () => {
           <p className="z-50 text-center text-[15px] mt-[20px] font-bold text-[#e4ded7] md:text-[18px] lg:text-left">
           bởi{" "}
             <Link
-              href="https://www.mono.co/"
+              href="/"
               target="_blank"
               className="underline underline-offset-2 hover:no-underline font-bold"
-              aria-label="Mono Website"
+              aria-label="Website"
             >
               Huỳnh Vĩnh Tiến
             </Link>{" "}

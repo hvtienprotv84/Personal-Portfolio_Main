@@ -36,37 +36,4 @@ export const reviewDetails = [
     year_exp: "Th 4, 2024 - Th 7, 2024",
     testimonial: "🡢 Công nghệ sử dụng cho dự án: ReactJS, Tailwind CSS, Github,... \n🡢 Top 1. Sinh Viên Thực Tập Xuất Sắc",
   },
-  // {
-  //   name: "Mauro Reis",
-  //   role: "CEO",
-  //   company: "Meuclone Digital",
-  //   profileImg: alan,
-  //   testimonial:
-  //     "Outstanding professional, developed our startup's website and delivered it in a very short time and with high quality.",
-  // },
-  // {
-  //   name: "Umar Abdullahi",
-  //   role: "Head of Engineering",
-  //   company: "Mono",
-  //   profileImg: alan,
-  //   testimonial:
-  //     "Victor is hardworking and has great sense of ownership. He was able to contribute in engineering excellent user interfaces and user experiences at Mono. I’m confident he will be a great asset to any engineering team.",
-  // },
-  // {
-  //   name: "Olamide Sholanke",
-  //   role: "Senior Frontend Engineer",
-  //   company: "Mono",
-  //   profileImg: alan,
-  //   testimonial:
-  //     "I had the pleasure of working with Victor on a frontend development project at Mono, and I highly recommend him. He consistently delivered high-quality code, and brought a proactive and creative approach to problem-solving.",
-  // },
-  // {
-  //   name: "Alan Franciskovic",
-  //   role: "Sales Specialist",
-  //   company: "Croatia Osiguranje d.d",
-  //   profileImg: alan,
-  //   testimonial:
-  //     "Very talented and amazing freelancer. Very easy to communicate with, pleasure to work with. Outstanding attention to detail, and works as fast as possible while also delivering amazing work.",
-  // },
-  
 ];
