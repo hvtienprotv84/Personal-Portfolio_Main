@@ -23,25 +23,25 @@ const BlogCard = ({ title, image, url, date, available, index }: blogProps) => {
         amount: "some",
         once: true,
       }}
-      className="relative flex h-[430px] w-[100%] max-w-[400px] flex-col items-center justify-start rounded-2xl bg-[#212531]"
+      className="relative flex h-[300px] w-[100%] max-w-[400px] flex-col items-center justify-start rounded-2xl bg-[#212531]"
     >
       <div className="mt-4 h-[100%] w-[90%] lg:mt-5 lg:w-[92%]">
-        <div className="h-[60%] w-full md:h-[56%]">
+        <div className="h-[70%] w-full md:h-[56%]">
           <Image
             src={image}
             alt={title}
             width={1600}
             height={840}
-            className="h-full w-full rounded-lg bg-contain bg-center object-cover"
+            className="h-full w-full rounded-lg bg-contain bg-center object-cover mb-[100px]"
           />
         </div>
 
-        <h3 className="mt-3 break-all uppercase leading-[1em] tracking-tight line-clamp-2">
+        <h3 className="mt-3 break-all leading-[1em] tracking-tight line-clamp-2">
           {title}
         </h3>
       </div>
 
-      <div className="absolute bottom-0 mb-5 flex w-[90%] items-center justify-between text-[14px] font-bold text-[#95979D]">
+      <div className="absolute bottom-0 mb-5 flex w-[90%] lg:top-[250px] items-center justify-between text-[14px] font-bold text-[#95979D]">
         {available ? (
           <>
             {" "}

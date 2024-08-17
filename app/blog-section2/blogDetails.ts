@@ -27,7 +27,7 @@ export const blogDetails = [
   {
     title: "Certificate JavaScript",
     image: require(".//../../public/certificate/quiz_js2.png"),
-    date: "APR 2024",
+    date: "August 2024",
     url: "https://www.w3docs.com/quiz/certificate/4/96/1723118471/Hu%E1%BB%B3nh%20V%C4%A9nh%20Ti%E1%BA%BFn/4f784b8f28f8110dd607470e4a944c55",
     available: true,
   },
@@ -48,7 +48,7 @@ export const blogDetails = [
   {
     title: "Certificate ReactJS",
     image: require(".//../../public/certificate/quiz_react2.png"),
-    date: "APR 2024",
+    date: "August 2024",
     url: "https://www.w3docs.com/quiz/certificate/34/100/1723121409/Hu%E1%BB%B3nh%20V%C4%A9nh%20Ti%E1%BA%BFn/e3e31d2d78e43c11b88a185dbf5623f2",
     available: true,
   },
@@ -90,6 +90,34 @@ export const blogDetails = [
   {
     title: "Certificate Git",
     image: require(".//../../public/certificate/quiz_git2.png"),
+    date: "August 2024",
+    url: "https://www.w3docs.com/quiz/certificate/45/100/1723167036/Hu%E1%BB%B3nh%20V%C4%A9nh%20Ti%E1%BA%BFn/a7025af0f5cb4e94e2bc52d2a9cc7d47",
+    available: true,
+  },
+  {
+    title: "Certificate HTML",
+    image: require(".//../../public/certificate/learning_html.jpg"),
+    date: "August 2024",
+    url: "https://www.w3docs.com/quiz/certificate/44/92/1723168969/Hu%E1%BB%B3nh%20V%C4%A9nh%20Ti%E1%BA%BFn/068d97d7de68313798b47209a35b3122",
+    available: true,
+  },
+  {
+    title: "Certificate CSS",
+    image: require(".//../../public/certificate/learning_css.jpg"),
+    date: "August 2024",
+    url: "https://www.w3docs.com/quiz/certificate/98/84/1723170478/Hu%E1%BB%B3nh%20V%C4%A9nh%20Ti%E1%BA%BFn/e69d4ac9bca6796aa9686e14b0ad590d",
+    available: true,
+  },
+  {
+    title: "Certificate ReactJS",
+    image: require(".//../../public/certificate/learning_react.jpg"),
+    date: "August 2024",
+    url: "https://www.w3docs.com/quiz/certificate/47/92/1723170010/Hu%E1%BB%B3nh%20V%C4%A9nh%20Ti%E1%BA%BFn/2e86fb628d2b7050df9c5ce80511d3de",
+    available: true,
+  },
+  {
+    title: "Certificate UI/UX",
+    image: require(".//../../public/certificate/learning_uiux.jpg"),
     date: "August 2024",
     url: "https://www.w3docs.com/quiz/certificate/45/100/1723167036/Hu%E1%BB%B3nh%20V%C4%A9nh%20Ti%E1%BA%BFn/a7025af0f5cb4e94e2bc52d2a9cc7d47",
     available: true,
