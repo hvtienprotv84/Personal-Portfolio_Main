@@ -12,7 +12,12 @@ const Footer = () => {
       animate="animate"
     >
       <motion.div className="mx-auto flex w-[100%] flex-col lg:flex-row items-center justify-between text-center text-[14px] text-[#e4ded7] sm:text-[12px] md:text-[14px] lg:max-w-[1440px] lg:text-[14px]">
+      
+      <motion.div className="flex flex-row justify-center items-center">
         <AnimatedBody text={`©️ All Rights Reserved ${year}`} className={"m-0 p-0"} />
+        <img className="w-[100px] ml-[5px]" src="https://visits.chhatreshkhatri.com/unique ID?label=Lượt truy cập   &LSHW=000000&CSHW=000000&SHWO=30&swap=0&LBGC=484848&CBGC=1CA2F1&LTC=FFFFFF&CTC=FFFFFF" alt=""/>
+      </motion.div>
+      
         <div className="flex flex-row lg:flex-row sm:flex-row sm:gap-1 md:gap-2">
           <AnimatedBody
             text={"Được xây dựng bởi"}
