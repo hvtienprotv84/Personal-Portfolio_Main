@@ -129,4 +129,18 @@ export const blogDetails = [
     url: "https://olympus.mygreatlearning.com/courses/65405/certificate",
     available: true,
   },
+  {
+    title: "Certificate JavaScript",
+    image: require(".//../../public/certificate/learning_js.jpg"),
+    date: "August 2024",
+    url: "https://olympus.mygreatlearning.com/courses/65405/certificate",
+    available: true,
+  },
+  {
+    title: "Certificate TypeScript",
+    image: require(".//../../public/certificate/learning_ts.jpg"),
+    date: "August 2024",
+    url: "https://olympus.mygreatlearning.com/courses/65405/certificate",
+    available: true,
+  },
 ];
