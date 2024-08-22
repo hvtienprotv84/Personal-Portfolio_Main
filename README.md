@@ -24,9 +24,11 @@
 ```bash
   npm run dev
 ```
-`localhost:3000`
+```bash
+  localhost:3000
+```
 
 ## Run Docker
  
-`docker build -t demo1 . ` **Build lên Docker Images**
-`docker run -p 5000:3000 demo1` **Run để chạy Docker Containers trên `localhost:5000`**
+- `docker build -t demo1 . ` **Build lên Docker Images**
+- `docker run -p 5000:3000 demo1` **Run để chạy Docker Containers trên `localhost:5000`**
