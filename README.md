@@ -14,6 +14,7 @@
 - Tailwind CSS 
 - Framer Motion  
 - GSAP
+- Docker
 - Responsive Website và Mobile 
   
 ## Run
