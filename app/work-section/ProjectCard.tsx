@@ -24,10 +24,12 @@ const ProjectCard = ({
 
   const { theme } = useTheme();
   const [textColor, setTextColor] = useState('');
+  const [bgColor, setBackgroundColor] = useState('');
 
   useEffect(() => {
     // Cập nhật màu sắc dựa trên theme
-    setTextColor(theme === 'dark' ? 'text-white' : 'text-green-600');
+    setTextColor(theme === 'dark' ? 'text-white' : 'text-green-600')
+    setBackgroundColor(theme === 'dark' ? 'border-[#0E1016]' : 'bg-[#ffb800]');
   }, [theme]);
 
   return (
@@ -126,7 +128,7 @@ const ProjectCard = ({
           // className={
           //   "max-w-[90%] text-[28px] leading-none text-white md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[45px] lg:leading-none"
           className={clsx(
-            'max-w-[90%] text-[28px] leading-none text-white md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[45px] lg:leading-none',
+            'max-w-[90%] text-[28px] leading-none md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[45px] lg:leading-none',
             textColor
           )}
           wordSpace={"mr-[0.25em]"}
