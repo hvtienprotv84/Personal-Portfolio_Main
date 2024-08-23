@@ -7,6 +7,8 @@ import Image from "next/image";
 import AnimatedTitle from "../animations/AnimatedTitle";
 import AnimatedBody from "../animations/AnimatedBody";
 import { motion } from "framer-motion";
+import clsx from "clsx";
+import { useTheme } from 'next-themes';
 
 const ProjectCard = ({
   id,
@@ -18,6 +20,8 @@ const ProjectCard = ({
   image,
   available,
 }: ProjectProps) => {
+  const { theme } = useTheme();
+
   return (
     <motion.div
       style={
@@ -110,9 +114,12 @@ const ProjectCard = ({
       >
         <AnimatedTitle
           text={name}
-          className={
-            "max-w-[90%] text-[28px] leading-none text-white md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[45px] lg:leading-none"
-          }
+          // className={
+          //   "max-w-[90%] text-[28px] leading-none text-white md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[45px] lg:leading-none"
+          className={clsx(
+            'max-w-[90%] text-[28px] leading-none text-white md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[45px] lg:leading-none',
+            theme === 'dark' ? 'text-white' : 'text-red-600'
+          )}
           wordSpace={"mr-[0.25em]"}
           charSpace={"-mr-[0.01em]"}
         />

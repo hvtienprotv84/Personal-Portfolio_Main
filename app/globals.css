@@ -37,3 +37,13 @@ body {
 body {
   overflow-y: hidden;
 }
+
+/* Ví dụ về các lớp dark mode */
+.dark {
+  @apply bg-gray-900 text-white;
+}
+
+/* Ví dụ về các lớp light mode */
+.light {
+  @apply bg-white text-black;
+}

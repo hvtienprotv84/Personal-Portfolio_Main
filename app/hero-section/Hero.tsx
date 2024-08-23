@@ -7,7 +7,15 @@ import AnimatedWords from "../animations/AnimatedWords";
 import profile from "../../public/hero.png";
 import vietnam from "./vietnam.png";
 import './style.css'
+
+import dynamic from "next/dynamic";
+const ButtonToggle = dynamic(() => import("../toggle-section/ButtonToggle"));
+import clsx from 'clsx';
+import { useTheme } from 'next-themes';
+
 const Hero = () => {
+  const { theme } = useTheme(); 
+
   return (
     <motion.section
       className="relative z-10 flex h-[80vh] w-full items-stretch justify-center bg-[url('.//../public/hero.jpg')] bg-cover  bg-center py-0 sm:h-[90vh]  md:h-[100vh] 3xl:h-[60vh]"
@@ -82,9 +90,33 @@ const Hero = () => {
               Gmail
             </motion.p>
           </Link>
-        </div>
-      </div>
+          <Link
+            href="/"
+            target="_blank"
+            aria-label="View Contra Profile"
+          >
+            <motion.p
+              // className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
+              className={clsx(
+                'text-[16px] font-bold md:text-[16px]',
+                theme === 'dark' ? 'text-red-600' : 'text-black'
+              )}
+              variants={bodyAnimation}
+            >
+              OKNA
+            </motion.p>
+          </Link>
 
+        
+            <motion.p
+              className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
+              variants={bodyAnimation}
+            >
+              <ButtonToggle/>
+            </motion.p>
+
+          </div>
+      </div>
       <div className="-mt-36 flex flex-col items-center justify-center sm:-mt-20 lg:my-40 lg:-mt-2 lg:py-40 ">
         <div
           className={`relative flex flex-col items-center justify-center ${monaSans.className}`}

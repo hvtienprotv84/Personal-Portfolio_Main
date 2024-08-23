@@ -6,6 +6,7 @@ import { ScrollerMotion } from "scroller-motion";
 import PreLoader from "./animations/PreLoader/PreLoader";
 import { initialBlobityOptions } from "./utils/BlobityConfig";
 import NavBar from "./navbar/NavBar";
+import { ThemeProvider } from 'next-themes';
 
 import dynamic from "next/dynamic";
 import Reviews from "./reviews-section/ReviewGrid";
@@ -38,6 +39,7 @@ export default function Home() {
 
   return (
     <>
+    <ThemeProvider>
       <PreLoader />
 
       <NavBar />
@@ -57,6 +59,7 @@ export default function Home() {
         <Footer />
       </main>
       {/* </ScrollerMotion> */}
+      </ThemeProvider>
     </>
   );
 }
