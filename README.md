@@ -22,6 +22,7 @@
 - Framer Motion  
 - GSAP
 - Docker
+- Toggle Dark Mode / Light Mode
 - Responsive Website và Mobile 
   
 ## Run
