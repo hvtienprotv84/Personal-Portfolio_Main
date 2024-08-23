@@ -45,8 +45,8 @@ export const metadata: Metadata = {
     title: "Huỳnh Vĩnh Tiến - Personal Portfolio",
     description:
       "Huỳnh Vĩnh Tiến - Personal Portfolio",
-    url: "https://www.google.vn/",
-    siteName: "www.google.vn",
+    url: "https://prsonal-portfolio-main.vercel.app/",
+    siteName: "https://prsonal-portfolio-main.vercel.app/",
     images: [
       {
         url: "https://static.vecteezy.com/system/resources/previews/009/126/098/non_2x/hvt-logo-hvt-letter-hvt-letter-logo-design-initials-hvt-logo-linked-with-circle-and-uppercase-monogram-logo-hvt-typography-for-technology-business-and-real-estate-brand-vector.jpg",
