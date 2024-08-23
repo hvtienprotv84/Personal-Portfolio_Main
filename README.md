@@ -3,10 +3,17 @@
 </div>   
 
 <div align="center">
-<img src="./public/qr.png" alt="QR Code" width="200" />
+  <img src="./public/qr.png" alt="QR Code" width="200" />
 </div>  
 
 <hr/>
+
+<div align="center">
+  
+  [![My Skills](https://skillicons.dev/icons?i=react,nextjs,ts,tailwind,docker)](https://skillicons.dev)
+  ![My Skills](https://go-skill-icons.vercel.app/api/icons?i=gsap&perline=3)
+</div>  
+
 
 - ReactJS  
 - NextJS
@@ -14,6 +21,7 @@
 - Tailwind CSS 
 - Framer Motion  
 - GSAP
+- Docker
 - Responsive Website và Mobile 
   
 ## Run
