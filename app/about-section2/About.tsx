@@ -1,12 +1,28 @@
+import React, { useEffect, useState } from 'react';
 import SongCarousel from "./SongCarousel";
 import "../animations/animate.css";
 import AnimatedBody from "../animations/AnimatedBody";
 import AnimatedTitle from "../animations/AnimatedTitle";
+import clsx from 'clsx';
+import { useTheme } from 'next-themes';
 
 const About = () => {
+
+  const { theme } = useTheme(); 
+  const [textColor, setTextColor] = useState('');
+  const [bgColor, setBackgroundColor] = useState('');
+
+  useEffect(() => {
+    // Cập nhật màu sắc dựa trên theme
+    setTextColor(theme === 'dark' ? 'text-[#e4ded7]' : 'text-[#ffb800]')
+    setBackgroundColor(theme === 'dark' ? 'border-[#0E1016]' : 'bg-[#e4ded7]');
+  }, [theme]);  
+
   return (
     <section
-      className="relative z-10 w-full items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center pt-16 pb-36 md:pt-20 md:pb-44 lg:pt-20 lg:pb-56"
+      className={clsx("relative z-10 w-full items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center pt-16 pb-36 md:pt-20 md:pb-44 lg:pt-20 lg:pb-56",
+        bgColor  
+      )}
       id="skills"
     >
       <div className="mx-auto flex w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px] lg:mb-[-100px] lg:mt-[-50px]">
@@ -14,9 +30,9 @@ const About = () => {
           text={
             "SKILLS"
           }
-          className={
-            "mb-10 text-left text-[40px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px]"
-          }
+          className={clsx("mb-10 text-left text-[40px] font-bold leading-[0.9em] tracking-tighter sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px]",
+            textColor  
+        )}
           wordSpace={"mr-[14px]"}
           charSpace={"mr-[0.001em]"}
         />
