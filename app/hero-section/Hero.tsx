@@ -17,11 +17,13 @@ import { useTheme } from 'next-themes';
 const Hero = () => {
   const { theme } = useTheme(); 
   const [textColor, setTextColor] = useState('');
+  const [borderColor, setBorderColor] = useState('border-[#000000]');
 
   useEffect(() => {
     // Cập nhật màu sắc dựa trên theme
-    setTextColor(theme === 'dark' ? 'text-red-600' : 'text-black');
-  }, [theme]);
+    setTextColor(theme === 'dark' ? 'text-[#e4ded7]' : 'text-[#ffb800]')
+    setBorderColor(theme === 'dark' ? 'border-[#e4ded7]' : 'border-[#ffb800]');
+  }, [theme]);  
 
   return (
     <motion.section
@@ -40,7 +42,10 @@ const Hero = () => {
             aria-label="BOOK A CALL"
           >
             <motion.button
-              className="hidden rounded-md border-2 border-[#e4ded7] py-2 px-4 text-[14px] font-semibold text-[#e4ded7] sm:block  md:text-[16px] lg:block"
+              className={clsx("hidden rounded-md border-2 border-[#e4ded7] py-2 px-4 text-[14px] font-semibold text-[#e4ded7] sm:block  md:text-[16px] lg:block",
+              textColor,
+              borderColor
+              )}
               variants={bodyAnimation}
             >
               📞 CALL ME
@@ -55,7 +60,10 @@ const Hero = () => {
             aria-label="View GitHub Profile"
           >
             <motion.p
-              className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
+              className={clsx(
+                'text-[16px] font-bold md:text-[16px]',
+                textColor // Sử dụng state để đảm bảo đồng bộ
+              )}
               variants={bodyAnimation}
             >
               Github
@@ -67,7 +75,10 @@ const Hero = () => {
             aria-label="View LinkedIn Profile"
           >
             <motion.p
-              className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
+              className={clsx(
+                'text-[16px] font-bold md:text-[16px]',
+                textColor // Sử dụng state để đảm bảo đồng bộ
+              )}
               variants={bodyAnimation}
             >
               Facebook
@@ -79,7 +90,10 @@ const Hero = () => {
             aria-label="View Twitter Profile"
           >
             <motion.p
-              className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
+              className={clsx(
+                'text-[16px] font-bold md:text-[16px]',
+                textColor // Sử dụng state để đảm bảo đồng bộ
+              )}
               variants={bodyAnimation}
             >
               Zalo
@@ -91,38 +105,41 @@ const Hero = () => {
             aria-label="View Contra Profile"
           >
             <motion.p
-              className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
-              variants={bodyAnimation}
-            >
-              Gmail
-            </motion.p>
-          </Link>
-          <Link
-            href="/"
-            target="_blank"
-            aria-label="View Contra Profile"
-          >
-            {/* <motion.p
-              // className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
-              className={clsx(
-                'text-[16px] font-bold md:text-[16px]',
-                theme === 'dark' ? 'text-red-600' : 'text-black'
-              )}
-              variants={bodyAnimation}
-            >
-              OKNA
-            </motion.p> */}
-            <motion.p
               className={clsx(
                 'text-[16px] font-bold md:text-[16px]',
                 textColor // Sử dụng state để đảm bảo đồng bộ
               )}
               variants={bodyAnimation}
             >
-              OKNA
+              Gmail
             </motion.p>
           </Link>
 
+            {/* <Link
+              href="/"
+              target="_blank"
+              aria-label="View Contra Profile"
+            >
+              <motion.p
+                // className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
+                className={clsx(
+                  'text-[16px] font-bold md:text-[16px]',
+                  theme === 'dark' ? 'text-red-600' : 'text-black'
+                )}
+                variants={bodyAnimation}
+              >
+                OKNA
+              </motion.p>
+              <motion.p
+                className={clsx(
+                  'text-[16px] font-bold md:text-[16px]',
+                  textColor // Sử dụng state để đảm bảo đồng bộ
+                )}
+                variants={bodyAnimation}
+              >
+                OKNA
+              </motion.p>
+            </Link> */}
         
             <motion.p
               className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
@@ -139,7 +156,9 @@ const Hero = () => {
         >
             <AnimatedWords 
               title="HUỲNH&nbsp;VĨNH&nbsp;TIẾN"
-              style="inline-block overflow-hidden pt-1 text-[40px] lg:text-[150px] -mr-4 sm:-mr-5 md:-mr-7 -mb-1 sm:-mb-2 md:-mb-3 lg:-mb-4 font-sans"
+              style={clsx("inline-block overflow-hidden pt-1 text-[40px] lg:text-[150px] -mr-4 sm:-mr-5 md:-mr-7 -mb-1 sm:-mb-2 md:-mb-3 lg:-mb-4 font-sans",
+              textColor
+              )}
             />
           <motion.div
             className="absolute bottom-[-110px] mx-auto sm:bottom-[-100px] h-[60px] lg:h-[260px] md:bottom-[-130px] lg:bottom-[-150px]"
@@ -165,7 +184,10 @@ const Hero = () => {
           className="  max-w-[350px] md:max-w-[400px] lg:max-w-[400px]"
           variants={bodyAnimation}
         >
-          <p className="z-50 text-center text-[15px] mt-[20px] font-bold text-[#e4ded7] md:text-[18px] lg:text-left">
+          <p className={clsx("z-50 text-center text-[15px] mt-[20px] font-bold md:text-[18px] lg:text-left",
+            textColor  
+            )}
+          >
           bởi{" "}
             <Link
               href="/"
@@ -183,7 +205,10 @@ const Hero = () => {
           className=" max-w-[500px] lg:block lg:max-w-[420px]"
           variants={bodyAnimation}
         >
-          <p className="flex flex-row justify-center mt-[20px] items-center text-right text-[16px] font-semibold text-[#e4ded7] md:text-[20px]">
+          <p className={clsx("flex flex-row justify-center mt-[20px] items-center text-right text-[16px] font-semibold md:text-[20px]",
+              textColor  
+            )}
+          >
             Tôi sinh sống và làm việc tại &nbsp;
             <Image
               src={vietnam}
