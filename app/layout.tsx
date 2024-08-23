@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   description:
     "Huỳnh Vĩnh Tiến - Personal Portfolio",
     icons: {
-      // icon: "/logo_1.png",  // Đảm bảo đường dẫn đúng
-      icon: "https://static.vecteezy.com/system/resources/previews/009/126/098/non_2x/hvt-logo-hvt-letter-hvt-letter-logo-design-initials-hvt-logo-linked-with-circle-and-uppercase-monogram-logo-hvt-typography-for-technology-business-and-real-estate-brand-vector.jpg",
+      icon: "/logo_1.png",  // Đảm bảo đường dẫn đúng
+      // icon: "https://static.vecteezy.com/system/resources/previews/009/126/098/non_2x/hvt-logo-hvt-letter-hvt-letter-logo-design-initials-hvt-logo-linked-with-circle-and-uppercase-monogram-logo-hvt-typography-for-technology-business-and-real-estate-brand-vector.jpg",
     },
     generator: "Next.js",
   applicationName: "Huỳnh Vĩnh Tiến",
