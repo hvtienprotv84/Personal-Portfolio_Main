@@ -24,7 +24,7 @@ const Hero = () => {
     // Cập nhật màu sắc dựa trên theme
     setTextColor(theme === 'dark' ? 'text-[#e4ded7]' : 'text-[#ffb800]')
     setBorderColor(theme === 'dark' ? 'border-[#e4ded7]' : 'border-[#ffb800]');
-    setBackgroundColor(theme === 'dark' ? 'border-[#0E1016]' : 'bg-[#ffb800]');
+    setBackgroundColor(theme === 'dark' ? 'bg-[#0E1016]' : 'bg-[#ffb800]');
   }, [theme]);  
 
   return (
