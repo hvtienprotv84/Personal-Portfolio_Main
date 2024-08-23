@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import Link from "next/link";
 import Image from "next/image";
 import { monaSans } from "../fonts/monaSans";
@@ -15,6 +16,12 @@ import { useTheme } from 'next-themes';
 
 const Hero = () => {
   const { theme } = useTheme(); 
+  const [textColor, setTextColor] = useState('');
+
+  useEffect(() => {
+    // Cập nhật màu sắc dựa trên theme
+    setTextColor(theme === 'dark' ? 'text-red-600' : 'text-black');
+  }, [theme]);
 
   return (
     <motion.section
@@ -95,11 +102,20 @@ const Hero = () => {
             target="_blank"
             aria-label="View Contra Profile"
           >
-            <motion.p
+            {/* <motion.p
               // className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
               className={clsx(
                 'text-[16px] font-bold md:text-[16px]',
                 theme === 'dark' ? 'text-red-600' : 'text-black'
+              )}
+              variants={bodyAnimation}
+            >
+              OKNA
+            </motion.p> */}
+            <motion.p
+              className={clsx(
+                'text-[16px] font-bold md:text-[16px]',
+                textColor // Sử dụng state để đảm bảo đồng bộ
               )}
               variants={bodyAnimation}
             >

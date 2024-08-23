@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -20,9 +21,17 @@ const ProjectCard = ({
   image,
   available,
 }: ProjectProps) => {
+
   const { theme } = useTheme();
+  const [textColor, setTextColor] = useState('');
+
+  useEffect(() => {
+    // Cập nhật màu sắc dựa trên theme
+    setTextColor(theme === 'dark' ? 'text-white' : 'text-green-600');
+  }, [theme]);
 
   return (
+    
     <motion.div
       style={
         {
@@ -118,7 +127,7 @@ const ProjectCard = ({
           //   "max-w-[90%] text-[28px] leading-none text-white md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[45px] lg:leading-none"
           className={clsx(
             'max-w-[90%] text-[28px] leading-none text-white md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[45px] lg:leading-none',
-            theme === 'dark' ? 'text-white' : 'text-red-600'
+            textColor
           )}
           wordSpace={"mr-[0.25em]"}
           charSpace={"-mr-[0.01em]"}
