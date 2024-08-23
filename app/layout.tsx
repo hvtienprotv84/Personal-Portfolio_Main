@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Syne } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+// import logo from "../public/logo_1.png"
 
 const syne = Syne({
   subsets: ["latin"],
@@ -13,9 +14,10 @@ const syne = Syne({
 export const metadata: Metadata = {
   title: "Huỳnh Vĩnh Tiến - Personal Portfolio",
   description:
-    "Frontend Engineer and Web Designer, currently at Kora. Focused on interfaces and experiences, working remotely from Lagos, Nigeria.",
+    "Huỳnh Vĩnh Tiến - Personal Portfolio",
     icons: {
-      icon: "/logo_1.png",  // Đảm bảo đường dẫn đúng
+      // icon: "/logo_1.png",  // Đảm bảo đường dẫn đúng
+      icon: "https://static.vecteezy.com/system/resources/previews/009/126/098/non_2x/hvt-logo-hvt-letter-hvt-letter-logo-design-initials-hvt-logo-linked-with-circle-and-uppercase-monogram-logo-hvt-typography-for-technology-business-and-real-estate-brand-vector.jpg",  // Đảm bảo đường dẫn đúng
     },
     generator: "Next.js",
   applicationName: "Huỳnh Vĩnh Tiến",
