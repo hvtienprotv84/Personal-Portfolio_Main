@@ -17,12 +17,14 @@ import { useTheme } from 'next-themes';
 const Hero = () => {
   const { theme } = useTheme(); 
   const [textColor, setTextColor] = useState('');
-  const [borderColor, setBorderColor] = useState('border-[#000000]');
+  const [borderColor, setBorderColor] = useState('');
+  const [bgColor, setBackgroundColor] = useState('');
 
   useEffect(() => {
     // Cập nhật màu sắc dựa trên theme
     setTextColor(theme === 'dark' ? 'text-[#e4ded7]' : 'text-[#ffb800]')
     setBorderColor(theme === 'dark' ? 'border-[#e4ded7]' : 'border-[#ffb800]');
+    setBackgroundColor(theme === 'dark' ? 'border-[#0E1016]' : 'bg-[#ffb800]');
   }, [theme]);  
 
   return (
@@ -32,7 +34,11 @@ const Hero = () => {
       initial="initial"
       animate="animate"
     >
-      <motion.div className="absolute left-0 top-0 right-0 bottom-0 h-full w-full bg-[#0E1016] mix-blend-color"></motion.div>
+      <motion.div className={clsx("absolute left-0 top-0 right-0 bottom-0 h-full w-full mix-blend-color",
+      bgColor  
+      )}
+      >
+      </motion.div>
 
       <div className="absolute top-10 flex justify-between sm:w-[90%] lg:max-w-[1440px]">
         <div>
