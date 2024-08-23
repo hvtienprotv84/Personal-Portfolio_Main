@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import { blogProps } from "./blogDetails";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -5,8 +6,20 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import "../globals.css";
+import clsx from 'clsx';
+import { useTheme } from 'next-themes';
 
 const BlogCard = ({ title, image, url, date, available, index }: blogProps) => {
+  const { theme } = useTheme(); 
+  const [textColor, setTextColor] = useState('');
+  const [textColorDay, setTextColorDay] = useState('');
+
+  useEffect(() => {
+    // Cập nhật màu sắc dựa trên theme
+    setTextColor(theme === 'dark' ? 'text-[#e4ded7]' : 'text-[#ffb800]')
+    setTextColorDay(theme === 'dark' ? 'text-[#95979d]' : 'text-[#ffffff]')
+  }, [theme]);  
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 10 }}
@@ -36,7 +49,10 @@ const BlogCard = ({ title, image, url, date, available, index }: blogProps) => {
           />
         </div>
 
-        <h3 className="mt-3 break-all leading-[1em] tracking-tight line-clamp-2">
+        <h3 className={clsx("mt-3 break-all leading-[1em] tracking-tight line-clamp-2",
+          textColor  
+        )}
+        >
           {title}
         </h3>
       </div>
@@ -45,7 +61,10 @@ const BlogCard = ({ title, image, url, date, available, index }: blogProps) => {
         {available ? (
           <>
             {" "}
-            <p>{date}</p>{" "}
+            <p className={clsx('',
+              textColorDay  
+            )}
+            >{date}</p>{" "}
             <Link
               href={url}
               target="_blank"
