@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "Huỳnh Vĩnh Tiến - Personal Portfolio",
     icons: {
       // icon: "/logo_1.png",  // Đảm bảo đường dẫn đúng
-      icon: "https://static.vecteezy.com/system/resources/previews/009/126/098/non_2x/hvt-logo-hvt-letter-hvt-letter-logo-design-initials-hvt-logo-linked-with-circle-and-uppercase-monogram-logo-hvt-typography-for-technology-business-and-real-estate-brand-vector.jpg",  // Đảm bảo đường dẫn đúng
+      icon: "https://static.vecteezy.com/system/resources/previews/009/126/098/non_2x/hvt-logo-hvt-letter-hvt-letter-logo-design-initials-hvt-logo-linked-with-circle-and-uppercase-monogram-logo-hvt-typography-for-technology-business-and-real-estate-brand-vector.jpg",
     },
     generator: "Next.js",
   applicationName: "Huỳnh Vĩnh Tiến",
@@ -44,12 +44,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Huỳnh Vĩnh Tiến - Personal Portfolio",
     description:
-      "Frontend Engineer and Web Designer, currently at Kora. Focused on interfaces and experiences, working remotely from Lagos, Nigeria.",
+      "Huỳnh Vĩnh Tiến - Personal Portfolio",
     url: "https://www.google.vn/",
     siteName: "www.google.vn",
     images: [
       {
-        url: "https://user-images.githubusercontent.com/84178696/228620835-e3cc5c9b-72fc-4f54-a628-407ef7b650f5.png",
+        url: "https://static.vecteezy.com/system/resources/previews/009/126/098/non_2x/hvt-logo-hvt-letter-hvt-letter-logo-design-initials-hvt-logo-linked-with-circle-and-uppercase-monogram-logo-hvt-typography-for-technology-business-and-real-estate-brand-vector.jpg",
         width: 1200,
         height: 630,
         alt: "Huỳnh Vĩnh Tiến",
@@ -62,11 +62,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Huỳnh Vĩnh Tiến - Personal Portfolio",
     description:
-      "Frontend Engineer and Web Designer, currently at Kora. Focused on interfaces and experiences, working remotely from Lagos, Nigeria.",
+      "Huỳnh Vĩnh Tiến - Personal Portfolio",
     creator: "huynhvinhtien", // username twitter của tôi
     creatorId: "1243720976552144897",
     images: [
-      "https://user-images.githubusercontent.com/84178696/228620835-e3cc5c9b-72fc-4f54-a628-407ef7b650f5.png",
+      "https://static.vecteezy.com/system/resources/previews/009/126/098/non_2x/hvt-logo-hvt-letter-hvt-letter-logo-design-initials-hvt-logo-linked-with-circle-and-uppercase-monogram-logo-hvt-typography-for-technology-business-and-real-estate-brand-vector.jpg",
     ],
   },
   robots: {
