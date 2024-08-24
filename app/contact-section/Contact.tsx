@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import Link from "next/link";
 import Image from "next/image";
 import { monaSans } from "../fonts/monaSans";
@@ -7,11 +8,26 @@ import AnimatedTitle from "../animations/AnimatedTitle";
 import AnimatedWords2 from "../animations/AnimatedWords2";
 import { motion } from "framer-motion";
 import heartIcon from "../../public/heart icon3.png";
+import clsx from 'clsx';
+import { useTheme } from 'next-themes';
 
 const Contact = () => {
+  const { theme } = useTheme(); 
+  const [textColor, setTextColor] = useState('');
+  const [bgColor, setBackgroundColor] = useState('');
+
+  useEffect(() => {
+    // Cập nhật màu sắc dựa trên theme
+    setTextColor(theme === 'dark' ? 'text-[#e4ded7]' : 'text-[#ffb800]')
+    // setBackgroundColor(theme === 'dark' ? 'bg-[#0E1016]' : 'bg-[#e4ded7]');
+    setBackgroundColor(theme === 'dark' ? 'bg-[#0E1016]' : 'bg-black');
+  }, [theme]);  
+
   return (
     <motion.section
-      className="relative z-10 flex h-[85vh] w-full items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center py-16 md:h-[80vh] md:py-20 lg:h-[90vh] lg:pt-0 lg:pb-28 3xl:h-[50vh]"
+      className={clsx("relative z-10 flex h-[85vh] w-full items-center justify-center overflow-hidden bg-cover bg-center py-16 md:h-[80vh] md:py-20 lg:h-[90vh] lg:pt-0 lg:pb-28 3xl:h-[50vh]",
+        bgColor  
+      )}
       id="contact"
       initial="initial"
       animate="animate"
@@ -22,9 +38,9 @@ const Contact = () => {
         >
           <AnimatedWords2
             title={"Let's Talk"}
-            style={
-              "flex max-w-[500px] flex-col items-start text-left text-[150px] font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center sm:text-[170px] md:text-[200px] lg:text-center lg:text-[270px] xl:text-[390px]"
-            }
+            style={clsx("flex max-w-[500px] flex-col items-start text-left text-[150px] font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center sm:text-[170px] md:text-[200px] lg:text-center lg:text-[270px] xl:text-[390px]",
+              textColor  
+            )}
           />
           <Image
             src={heartIcon}
