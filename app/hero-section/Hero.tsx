@@ -77,7 +77,7 @@ const Hero = () => {
               )}
               variants={bodyAnimation}
             >
-              {t("hero.github")}
+              Github
             </motion.p>
           </Link>
           <Link
@@ -92,7 +92,7 @@ const Hero = () => {
               )}
               variants={bodyAnimation}
             >
-              {t("hero.facebook")}
+              Facebook
             </motion.p>
           </Link>
           <Link

@@ -12,11 +12,6 @@ import { ThemeProvider } from 'next-themes';
 import dynamic from "next/dynamic";
 import Reviews from "./reviews-section/ReviewGrid";
 
-// import translation_vn from "./language/vn/translation.json"
-// import translation_en from "./language/en/translation.json"
-// import i18next from 'i18next';
-// import { I18nextProvider } from 'react-i18next';
-
 const Work = dynamic(() => import("./work-section/Work"));
 // const About = dynamic(() => import("./about-section/About"));
 const About2 = dynamic(() => import("./about-section2/About"));
@@ -47,7 +42,6 @@ export default function Home() {
 
   return (
     <>
-      {/* <I18nextProvider i18n={i18next}> */}
     <ThemeProvider>
         <PreLoader />
 
@@ -69,7 +63,6 @@ export default function Home() {
         </main>
         {/* </ScrollerMotion> */}
       </ThemeProvider>
-      {/* </I18nextProvider> */}
     </>
   );
 }
