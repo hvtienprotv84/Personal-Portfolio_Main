@@ -14,6 +14,9 @@ const ButtonToggle = dynamic(() => import("../toggle-section/ButtonToggle"));
 import clsx from 'clsx';
 import { useTheme } from 'next-themes';
 
+import MultiLang from './../language-section/MultiLang';
+import { useTranslation } from 'react-i18next';
+
 const Hero = () => {
   const { theme } = useTheme(); 
   const [textColor, setTextColor] = useState('');
@@ -26,6 +29,8 @@ const Hero = () => {
     setBorderColor(theme === 'dark' ? 'border-[#e4ded7]' : 'border-[#ffb800]');
     setBackgroundColor(theme === 'dark' ? 'bg-[#0E1016]' : 'bg-[#ffb800]');
   }, [theme]);  
+
+  const [t, i18n] = useTranslation("global");
 
   return (
     <motion.section
@@ -72,7 +77,7 @@ const Hero = () => {
               )}
               variants={bodyAnimation}
             >
-              Github
+              {t("hero.github")}
             </motion.p>
           </Link>
           <Link
@@ -87,7 +92,7 @@ const Hero = () => {
               )}
               variants={bodyAnimation}
             >
-              Facebook
+              {t("hero.facebook")}
             </motion.p>
           </Link>
           <Link
@@ -147,6 +152,16 @@ const Hero = () => {
               </motion.p>
             </Link> */}
         
+            <motion.p
+              className={clsx(
+                'text-[16px] font-bold md:text-[16px]',
+                textColor // Sử dụng state để đảm bảo đồng bộ
+              )} 
+              variants={bodyAnimation}
+            >
+              <MultiLang/>
+            </motion.p>
+
             <motion.p
               className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
               variants={bodyAnimation}
