@@ -64,3 +64,86 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #cc0000; /* Màu của thanh trượt khi hover */
 }
+
+.custom-dropdown {
+  display: inline-block;
+  /* background-color: black; */
+}
+
+.dropdown-button {
+  background-color: #152dc3;
+  padding: 8px;
+  /* padding-right: 30px !important; */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  z-index: 9999;
+  border-radius: 10px
+}
+
+.dropdown-button:hover{
+  border-radius: 0.5rem 0.5rem 0 0;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  z-index: 1;
+  padding: 10px;
+  padding-right: 10px !important;
+  background-color: #152dc3;
+  z-index: 9999;
+}
+
+.dropdown-button:hover + .dropdown-content,
+.dropdown-content:hover {
+  display: block;
+}
+
+.dropdown-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  left: 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.dropdown-button .fi{
+  width: 20px !important;
+  height: 20px !important;
+}
+
+#name_flag_firt{
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin-left: 10px;
+
+}
+
+.hidden-select {
+  display: none;
+}
+
+
+#flag{ 
+  width: 20px !important;
+  height: 20px !important;
+
+}
+
+#name_flag{
+  font-size: 16px;
+  color: white;
+  margin-left: 10px;
+}
+
+#icon_dropdown{
+  font-size: 10px;
+  margin-left: 10px;
+  color:white;
+}

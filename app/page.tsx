@@ -14,6 +14,9 @@ import Reviews from "./reviews-section/ReviewGrid";
 
 import './globals.css';
 
+// import LanguageSelector from '../app/containers/LanguageSelector';
+import { LanguageProvider } from '../app/containers/Language';
+
 const Work = dynamic(() => import("./work-section/Work"));
 // const About = dynamic(() => import("./about-section/About"));
 const About2 = dynamic(() => import("./about-section2/About"));
@@ -44,6 +47,7 @@ export default function Home() {
 
   return (
     <>
+    <LanguageProvider>
     <ThemeProvider>
         <PreLoader />
 
@@ -52,6 +56,7 @@ export default function Home() {
         {/* <ScrollerMotion> */}
         <main className="flex flex-col items-center justify-center">
           <Hero />
+          {/* <LanguageSelector/> */}
           <Work />
           <About2 />
           <About3 />
@@ -65,6 +70,7 @@ export default function Home() {
         </main>
         {/* </ScrollerMotion> */}
       </ThemeProvider>
+      </LanguageProvider>
     </>
   );
 }

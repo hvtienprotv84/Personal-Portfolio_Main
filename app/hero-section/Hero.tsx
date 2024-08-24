@@ -8,6 +8,8 @@ import AnimatedWords from "../animations/AnimatedWords";
 import profile from "../../public/hero.png";
 import vietnam from "./vietnam.png";
 import './style.css'
+import { Text } from '../Text';
+import LanguageSelector from '../containers/LanguageSelector';
 
 import dynamic from "next/dynamic";
 const ButtonToggle = dynamic(() => import("../toggle-section/ButtonToggle"));
@@ -72,7 +74,7 @@ const Hero = () => {
               )}
               variants={bodyAnimation}
             >
-              Github
+              <Text tid="exploreHeader" />
             </motion.p>
           </Link>
           <Link
@@ -147,15 +149,15 @@ const Hero = () => {
               </motion.p>
             </Link> */}
         
-            {/* <motion.p
+            <motion.p
               className={clsx(
-                'text-[16px] font-bold md:text-[16px]',
+                'text-[16px] font-bold lg:text-[10px] lg:mt-[-7px] z-50 lg:mr-[-20px] rounded-t-lg',
                 textColor // Sử dụng state để đảm bảo đồng bộ
               )} 
               variants={bodyAnimation}
             >
-              <MultiLang/>
-            </motion.p> */}
+              <LanguageSelector/>
+            </motion.p>
 
             <motion.p
               className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
