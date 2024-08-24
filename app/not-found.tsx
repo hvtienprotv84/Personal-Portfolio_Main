@@ -4,10 +4,11 @@ import Image from "next/image";
 
 const NotFound = () => {
   return (
-    <div className="flex h-[100vh] flex-col items-center justify-center bg-[#0E1016] text-[#e4ded7] gap-5">
-      <p className="text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] uppercase">Egbon, you don miss road oh!</p>
+    // <div className="flex h-[100vh] flex-col items-center justify-center bg-[#0E1016] text-[#e4ded7] gap-5">
+    <div className="flex h-[100vh] flex-col items-center justify-center bg-[#f4f5f4] text-[#e4ded7] gap-5">
+    <p className="text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] uppercase">404 Not Found</p>
       <Image
-        src="https://user-images.githubusercontent.com/84178696/228884970-66a9687c-b364-48e4-91ca-05332dadbba9.png"
+        src="https://cdn.dribbble.com/users/605899/screenshots/4144886/pikabu.gif"
         alt="Funny Meme"
         width={858}
         height={483}
