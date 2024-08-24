@@ -12,6 +12,8 @@ import { ThemeProvider } from 'next-themes';
 import dynamic from "next/dynamic";
 import Reviews from "./reviews-section/ReviewGrid";
 
+import './globals.css';
+
 const Work = dynamic(() => import("./work-section/Work"));
 // const About = dynamic(() => import("./about-section/About"));
 const About2 = dynamic(() => import("./about-section2/About"));

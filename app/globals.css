@@ -47,3 +47,20 @@ body {
 .light {
   @apply bg-white text-black;
 }
+
+::-webkit-scrollbar {
+  width: 10px; /* Kích thước của thanh trượt */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Màu nền của thanh trượt */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff0000; /* Màu của thanh trượt */
+  border-radius: 1px; /* Bo tròn các góc của thanh trượt */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cc0000; /* Màu của thanh trượt khi hover */
+}
