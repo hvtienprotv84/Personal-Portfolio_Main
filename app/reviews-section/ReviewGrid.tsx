@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import ReviewCard from "./ReviewCard";
 import { reviewDetails } from "./reviewDetails";
 import AnimatedWords2 from "../animations/AnimatedWords2";
@@ -6,17 +7,34 @@ import AnimatedBody from "../animations/AnimatedBody";
 import { motion } from "framer-motion";
 import hireMe from "../../public/hiremeoncontra-dark.webp";
 import Image from "next/image";
+import clsx from 'clsx';
+import { useTheme } from 'next-themes';
 
 const Reviews = () => {
+  const { theme } = useTheme(); 
+  const [textColor, setTextColor] = useState('');
+  const [bgColor, setBackgroundColor] = useState('');
+
+  useEffect(() => {
+    // Cập nhật màu sắc dựa trên theme
+    setTextColor(theme === 'dark' ? 'text-[#e4d8d7]' : 'text-[#ffb800]')
+    setBackgroundColor(theme === 'dark' ? 'bg-[#0E1016]' : 'bg-[#e4ded7]');
+  }, [theme]);  
+
   return (
-    <section className="z-10 flex w-full flex-col items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center pt-20 md:pb-16 lg:pb-24">
+    <section className={clsx("z-10 flex w-full flex-col items-center justify-center overflow-hidden bg-cover bg-center pt-20 md:pb-16 lg:pb-24",
+      bgColor  
+    )}
+    >
       <div id="testimonials" className="mb-[60px]"></div>
       <div
         className={`relative mb-16 flex w-full flex-col items-center justify-center gap-10  text-[#e4ded7] sm:items-center lg:max-w-[1440px]`}
       >
         <AnimatedWords2
           title={"experience"}
-          style={`flex max-w-[500px] flex-col items-start text-left pr-5 ${monaSans.className} font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center lg:text-center text-[clamp(70px,14vw,155.04px)]`}
+          style={clsx(`flex max-w-[500px] flex-col items-start text-left pr-5 ${monaSans.className} font-extrabold uppercase leading-[0.9em] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center lg:text-center text-[clamp(70px,14vw,155.04px)]`,
+            textColor  
+          )}
         />
         <AnimatedBody
           text="Real Stories from Clients and Collaborators Who Have Experienced My Work Firsthand"

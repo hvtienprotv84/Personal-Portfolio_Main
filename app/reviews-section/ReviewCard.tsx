@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import { reviewProps } from "./reviewDetails";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -7,6 +8,8 @@ import "../globals.css";
 import profile from "../../public/samuel.avif";
 import slash from "../../public/review-slash.svg";
 import { motion } from "framer-motion";
+import clsx from 'clsx';
+import { useTheme } from 'next-themes';
 
 const BlogCard = ({
   name,
@@ -28,6 +31,17 @@ const BlogCard = ({
   //   return ${firstName} ${lastName[0]}.;
   // };
 
+  const { theme } = useTheme(); 
+  const [textColor, setTextColor] = useState('');
+  const [textColorRoleCompany, setTextColorRoleCompany] = useState('');
+  const [textColorMyName, setTextColorMyName] = useState('');
+  
+  useEffect(() => {
+    // Cập nhật màu sắc dựa trên theme
+    setTextColor(theme === 'dark' ? 'text-[#e4ded7]' : 'text-black')
+    setTextColorRoleCompany(theme === 'dark' ? 'text-[#95979D]' : 'text-black')
+    setTextColorMyName(theme === 'dark' ? 'text-[#95979D]' : 'text-black')
+  }, [theme]);  
 
   return (
     <motion.div
@@ -53,11 +67,14 @@ const BlogCard = ({
         className="absolute top-[34px] left-[28px] w-[51px]"
       />
 
-      <p className="mt-10 text-[15px] lg:text-[18px] flex w-full items-center justify-center font-[500] leading-relaxed tracking-wide text-[#e4ded7]">
+      <p className={clsx("mt-10 text-[15px] lg:text-[18px] flex w-full items-center justify-center font-bold font-sans leading-relaxed tracking-wide",
+       textColor  
+      )}
+      >
         {title_name}
       </p>
 
-      <p className="whitespace-pre-wrap text-[14px] h-fit mb-[200px] lg:text-[18px] font-[500] leading-relaxed tracking-wide text-[#e4ded7]">
+      <p className="whitespace-pre-wrap text-[14px] h-fit mb-[200px] lg:text-[18px] font-[500] leading-relaxed tracking-wide">
         {testimonial}
       </p>
 
@@ -71,12 +88,17 @@ const BlogCard = ({
           className="h-[41px] w-[41px] rounded-full bg-contain bg-center object-cover grayscale hover:grayscale-0"
         />
         <div className="flex flex-col gap-1 pr-7 w-full max-w-full">
-          <h3 className="w-full max-w-full text-[23px] font-sans font-bold uppercase leading-[20.7px] tracking-[-0.46056px] text-[#e4ded7]"
-          data-blobity-tooltip="Tên tôi á!"
+          <h3 className={clsx("w-full max-w-full text-[23px] font-sans font-bold uppercase leading-[20.7px] tracking-[-0.46056px] text-[#e4ded7]",
+          textColorMyName
+          )}
+          data-blobity-tooltip="Đây là tên của tôi!"
           >
             {abbreviateName(name)}
           </h3>
-          <p className="text-[12px] lg:text-xl font-[500] leading-[16px] text-[#95979D]">
+          <p className={clsx("text-[12px] lg:text-xl font-[500] leading-[16px]",
+           textColorRoleCompany  
+          )}
+          >
             {role}: {company}
           </p>
           <h4>
