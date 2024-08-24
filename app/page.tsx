@@ -12,11 +12,10 @@ import { ThemeProvider } from 'next-themes';
 import dynamic from "next/dynamic";
 import Reviews from "./reviews-section/ReviewGrid";
 
-import translation_vn from "./language/vn/translation.json"
-import translation_en from "./language/en/translation.json"
-import i18next from 'i18next';
-import { I18nextProvider } from 'react-i18next';
-import { initReactI18next } from 'react-i18next';
+// import translation_vn from "./language/vn/translation.json"
+// import translation_en from "./language/en/translation.json"
+// import i18next from 'i18next';
+// import { I18nextProvider } from 'react-i18next';
 
 const Work = dynamic(() => import("./work-section/Work"));
 // const About = dynamic(() => import("./about-section/About"));
@@ -46,22 +45,9 @@ export default function Home() {
     });
   }, []);
 
-  i18next.init({
-  interpolation: { escapeValue: false },
-  lng: localStorage.getItem("language") || 'en' || 'vn' ,
-  resources: {
-    en: {
-      global: translation_en,
-    },
-    vn: {
-      global: translation_vn,
-    },
-  },
-})
-
   return (
     <>
-      <I18nextProvider i18n={i18next}>
+      {/* <I18nextProvider i18n={i18next}> */}
     <ThemeProvider>
         <PreLoader />
 
@@ -83,7 +69,7 @@ export default function Home() {
         </main>
         {/* </ScrollerMotion> */}
       </ThemeProvider>
-      </I18nextProvider>
+      {/* </I18nextProvider> */}
     </>
   );
 }
