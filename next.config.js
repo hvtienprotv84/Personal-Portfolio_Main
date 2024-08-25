@@ -9,6 +9,10 @@ const nextConfig = {
   images: {
     domains: ["user-images.githubusercontent.com", "cdn.hashnode.com", "github.com", "cdn.dribbble.com"],
   },
+  webpack: (config, { dev, isServer }) => {
+    // Thực hiện thay đổi cấu hình Webpack ở đây nếu cần
+    return config;
+  },
   fontLoaders: [
     {
       loader: "@next/font/google",
