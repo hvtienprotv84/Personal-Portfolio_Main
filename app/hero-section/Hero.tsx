@@ -89,6 +89,21 @@ const Hero = () => {
               )}
               variants={bodyAnimation}
             >
+              Github
+            </motion.p>
+          </Link>
+          <Link
+            href="/"
+            target="_blank"
+            aria-label="View LinkedIn Profile"
+          >
+            <motion.p
+              className={clsx(
+                'text-[16px] font-bold md:text-[16px]',
+                textColor // Sử dụng state để đảm bảo đồng bộ
+              )}
+              variants={bodyAnimation}
+            >
               Facebook
             </motion.p>
           </Link>
