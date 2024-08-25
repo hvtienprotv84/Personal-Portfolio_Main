@@ -67,7 +67,7 @@ const BlogCard = ({
         className="absolute top-[34px] left-[28px] w-[51px]"
       />
 
-      <p className={clsx("mt-10 text-[15px] lg:text-[18px] flex w-full items-center justify-center font-bold font-sans leading-relaxed tracking-wide",
+      <p className={clsx("text-[15px] mt-[-5px] lg:mt-[0px] lg:text-[18px] flex w-full items-center justify-center font-bold font-sans leading-relaxed tracking-wide",
        textColor  
       )}
       >
