@@ -7,15 +7,12 @@ import kr from './kr.json';
 
 export const dictionaryList = { vn, en, de, jp, ch, kr };
 export const languageOptions = {
-  // en: 'English2',
-  // ch: 'Chinese',
-  // de: 'Spanish'
 
-  vn: { name: 'Tiếng Việt', flag: 'vn' },
-  en: { name: 'Tiếng Anh', flag: 'gb' },
-  de: { name: 'Tiếng Đức', flag: 'de' },
-  kr: { name: 'Tiếng Hàn', flag: 'kr' },
-  jp: { name: 'Tiếng Nhật', flag: 'jp' },
-  ch: { name: 'Tiếng Trung', flag: 'cn' },
+  vn: { name: 'VN', flag: 'vn' },
+  en: { name: 'EN', flag: 'gb' },
+  de: { name: 'DE', flag: 'de' },
+  kr: { name: 'KR', flag: 'kr' },
+  jp: { name: 'JP', flag: 'jp' },
+  ch: { name: 'CN', flag: 'cn' },
 
 };

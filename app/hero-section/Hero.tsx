@@ -151,7 +151,7 @@ const Hero = () => {
         
             <motion.p
               className={clsx(
-                'text-[16px] font-bold lg:text-[10px] lg:mt-[-7px] z-50 lg:mr-[-20px] rounded-t-lg',
+                'text-[16px] font-bold lg:text-[10px] lg:mt-[-7px] z-50 lg:mr-[-5px] rounded-t-lg',
                 textColor // Sử dụng state để đảm bảo đồng bộ
               )} 
               variants={bodyAnimation}
