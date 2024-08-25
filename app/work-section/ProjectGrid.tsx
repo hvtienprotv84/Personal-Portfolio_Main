@@ -24,6 +24,25 @@ const ProjectGrid = () => {
             textColor  
           )}
           />
+          {/* <motion.p>
+            <Text tid="exploreHeader" />
+          </motion.p> */}
+
+      {/* <motion.p
+      className={clsx(
+        `flex max-w-[500px] mb-[50px] flex-col items-start text-left pr-5 ${monaSans.className} font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center lg:mt-[-20px] lg:text-center text-[clamp(70px,14vw,155.04px)]`,
+        textColor
+        )}
+      >
+        <Text tid="exploreHeader" />
+      </motion.p> */}
+
+        {/* <Text tid="exploreHeader" className={clsx(
+        `flex max-w-[500px] mb-[50px] flex-col items-start text-left pr-5 ${monaSans.className} font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center lg:mt-[-20px] lg:text-center text-[clamp(70px,14vw,155.04px)]`,
+        textColor
+        )} /> */}
+
+
       {/* <div className="mb-10 flex gap-16 text-[#e4ded7] md:mb-16  lg:mb-20 ">
         <h4
           className={`text-[16px] md:text-[20px] lg:text-[24px] ${
