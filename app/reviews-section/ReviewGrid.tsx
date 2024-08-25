@@ -42,7 +42,7 @@ const Reviews = () => {
         />
       </div>
       {/* <motion.div className="grid w-[90%] max-w-[1345px] grid-cols-1 grid-rows-6 place-content-center place-items-center gap-x-6 gap-y-6 sm:grid-cols-2  sm:grid-rows-3 lg:grid-cols-3 lg:grid-rows-1"> */}
-      <motion.div className="flex w-[90%] max-w-[1345px] flex-col lg:flex-row justify-center grid-cols-1 grid-rows-6 place-content-center place-items-center gap-x-6 gap-y-6 sm:grid-cols-2  sm:grid-rows-3 lg:grid-cols-3 lg:grid-rows-1">
+      <motion.div className="flex w-[90%] max-w-[1345px] mt-[-120px] lg:mt-[0px] flex-col lg:flex-row justify-center grid-cols-1 grid-rows-6 place-content-center place-items-center gap-x-6 gap-y-6 sm:grid-cols-2  sm:grid-rows-3 lg:grid-cols-3 lg:grid-rows-1">
         {reviewDetails.map((review, index) => {
           return (
             <ReviewCard

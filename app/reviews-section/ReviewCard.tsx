@@ -59,7 +59,7 @@ const BlogCard = ({
       amount: "some",
       once: true,
     }}
-      className="relative flex h-[473px] w-[100%] flex-col items-start justify-between rounded-[23px] border-[3px] border-[#212531] bg-transparent p-[28px] sm:h-[450px] sm:items-center sm:justify-start lg:h-[393px] lg:max-w-[438px] "
+      className="relative flex h-[320px] w-[100%] flex-col items-start justify-between rounded-[23px] border-[3px] border-[#212531] bg-transparent p-[28px] sm:h-[450px] sm:items-center sm:justify-start lg:h-[393px] lg:max-w-[438px] "
     >
       <Image
         src={slash}
@@ -78,7 +78,7 @@ const BlogCard = ({
         {testimonial}
       </p>
 
-      <div className="flex gap-3 sm:absolute sm:bottom-[28px] sm:left-[28px]">
+      <div className="flex gap-3 sm:absolute mt-[-160px] lg:mt-[0px] sm:bottom-[28px] sm:left-[28px]">
         <Image
           src={profileImg}
           alt={"title"}
@@ -101,9 +101,9 @@ const BlogCard = ({
           >
             {role}: {company}
           </p>
-          <h4>
+          <h5>
             {year_exp}
-          </h4>
+          </h5>
         </div>
       </div>
     </motion.div>
