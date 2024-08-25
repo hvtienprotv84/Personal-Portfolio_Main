@@ -39,6 +39,7 @@ export const Github = () => {
         <div className='w-full max-w-[350px] lg:w-full lg:max-w-full mt-[20px] pb-[20px]'>
             <GitHubCalendar username="hvtienprotv84" /> 
         </div>
+        <iframe className='w-full h-[300px]' src="https://github-readme-activity-graph.vercel.app/graph?username=hvtienprotv84&theme=react-dark" title="GitHub Activity Graph"></iframe>
       </motion.div>
     </motion.section>
   );
