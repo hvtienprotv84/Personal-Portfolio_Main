@@ -24,6 +24,7 @@ const About3 = dynamic(() => import("./about-section3/About"));
 const Blog2 = dynamic(() => import("./blog-section2/BlogGrid"));
 // const Blog = dynamic(() => import("./blog-section/BlogGrid"));
 const Github = dynamic(() => import("./github-section/Github"));
+const FormContact = dynamic(() => import("./form-contact-section/FormContact"));
 const Contact = dynamic(() => import("./contact-section/Contact"));
 const Footer = dynamic(() => import("./footer/Footer"));
 
@@ -65,6 +66,7 @@ export default function Home() {
           <Github/>
           {/* <About /> */}
           {/* <Blog /> */}
+          <FormContact/>
           <Contact />
           <Footer />
         </main>
