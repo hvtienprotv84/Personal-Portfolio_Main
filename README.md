@@ -10,9 +10,9 @@
 
 <div align="center">
   
-  [![My Skills](https://skillicons.dev/icons?i=react,nextjs,ts,tailwind,docker)](https://skillicons.dev)
+  [![My Skills](https://skillicons.dev/icons?i=react,nextjs,ts,tailwind)](https://skillicons.dev)
   ![My Skills](https://go-skill-icons.vercel.app/api/icons?i=gsap&perline=3)
-  [![My Skills](https://skillicons.dev/icons?i=gmail)](https://skillicons.dev)
+  [![My Skills](https://skillicons.dev/icons?i=docker,github,gmail)](https://skillicons.dev)
 </div>  
 
 
