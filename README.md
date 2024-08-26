@@ -13,6 +13,7 @@
   [![My Skills](https://skillicons.dev/icons?i=react,nextjs,ts,tailwind)](https://skillicons.dev)
   ![My Skills](https://go-skill-icons.vercel.app/api/icons?i=gsap&perline=3)
   [![My Skills](https://skillicons.dev/icons?i=docker,github,vercel,gmail)](https://skillicons.dev)
+  <img src="https://cdn-icons-png.flaticon.com/512/6261/6261546.png" width="48" height="48" />
 </div>  
 
 
