@@ -80,7 +80,7 @@ const EmailContact = () => {
         id="copyInput"
         defaultValue="huynhvinhtien.84@gmail.com"
         readOnly
-        className="py-1 indent-2 rounded-l-lg text-base font-bold h-[40px] lg:w-[280px] focus:outline-none bg-white text-black"
+        className="py-1 indent-2 rounded-l-lg text-base font-bold h-[40px] w-[280px] lg:w-[280px] focus:outline-none bg-white text-black"
         name="text"
         type="text"
       />

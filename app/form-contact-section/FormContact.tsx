@@ -35,13 +35,13 @@ const FormContact = () => {
     >
       <motion.div className="flex flex-col p-2 py-24">
       <AnimatedWords2
-          title={"Email Contact"}
-          style={clsx(`flex max-w-[500px] lg:mt-[-150px] lg:h-[350px] mb-[50px] flex-col items-start text-left pr-5 ${monaSans.className} font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center lg:mt-[-20px] lg:text-center text-[clamp(70px,14vw,155.04px)]`,
+          title={"Email-Contact"}
+          style={clsx(`flex mt-[-50px] lg:max-w-full lg:mt-[-150px] lg:h-[350px] mb-[50px] flex-col items-start text-left pr-5 ${monaSans.className} font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center lg:mt-[-20px] lg:text-center text-[clamp(70px,14vw,155.04px)]`,
             textColor  
           )}
           /> 
                 <motion.form
-                  className="form mt-[-150px]"
+                  className="form mt-[20px] lg:mt-[-150px]"
                   action="https://formspree.io/f/mgvwkgnn"
                   method="POST"
                 >
@@ -49,7 +49,7 @@ const FormContact = () => {
                     <svg
                       className="duration-300 group-hover:rotate-[360deg]"
                       fill="none"
-                      stroke="currentColor"
+                      stroke="#000000"
                       viewBox="0 0 24 24"
                       height="1em"
                       width="1em"

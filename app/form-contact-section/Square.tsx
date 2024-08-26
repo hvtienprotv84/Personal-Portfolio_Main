@@ -25,7 +25,7 @@ const Square = () => {
 
   return (
     <motion.section 
-      className="connect" 
+      className="hidden lg:block" 
       id="connect"
       initial="initial"
       animate="animate"
