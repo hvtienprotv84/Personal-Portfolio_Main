@@ -27,7 +27,8 @@
 - Gửi Email
 - Đa Ngôn Ngữ: Tiếng Việt, Tiếng Anh, Tiếng Đức, Tiếng Hàn, Tiếng Nhật, Tiếng Trung,...
 - Toggle Dark Mode / Light Mode
-- Responsive Website và Mobile 
+- Responsive Website và Mobile
+- Deployed Vercel
   
 ## Run
 
