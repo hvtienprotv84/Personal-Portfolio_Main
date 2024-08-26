@@ -23,6 +23,7 @@
 - Framer Motion  
 - GSAP
 - Docker
+- Github Calendar / Github Graph
 - Gửi Email
 - Đa Ngôn Ngữ: Tiếng Việt, Tiếng Anh, Tiếng Đức, Tiếng Hàn, Tiếng Nhật, Tiếng Trung,...
 - Toggle Dark Mode / Light Mode
