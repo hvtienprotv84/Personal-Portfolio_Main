@@ -45,7 +45,7 @@ const Square = () => {
                     )}>
                 </span>
                 <div className="square__title">
-                  <p data-translate="available">Xin Chào, Tôi là <h1 className='text-[20px] font-bold'>Huỳnh Vĩnh Tiến</h1> Mọi Thắc Mắc Xin Liên Hệ <br/>Nhé Xin Cám Ơn!</p>
+                  <p data-translate="available">Xin Chào, Tôi là <h1 className='text-[20px] font-bold'>Huỳnh Vĩnh Tiến</h1> Mọi Thắc Mắc Xin Liên Hệ <br/>Xin Cám Ơn!</p>
                 </div>
               </div>
             </div>

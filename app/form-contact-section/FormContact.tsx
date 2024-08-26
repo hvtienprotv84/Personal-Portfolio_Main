@@ -76,7 +76,7 @@ const FormContact = () => {
                     </motion.label>
                     <motion.textarea
                       className="custom-input h-[100px] w-full text-black max-w-full transform rounded-lg border border-gray-300 bg-gray-100 px-4 py-2 text-sm shadow-sm transition duration-300 ease-in-out focus:-translate-y-1 focus:outline-blue-300 hover:border-blue-300 hover:shadow-lg"
-                      placeholder="Enter text here"
+                      placeholder="Vd: Xin chào"
                       name="message"
                       id="messageInput"
                     />
