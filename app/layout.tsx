@@ -12,9 +12,9 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Huỳnh Vĩnh Tiến - Personal Portfolio",
+  title: "Huỳnh Vĩnh Tiến Personal Portfolio",
   description:
-    "Huỳnh Vĩnh Tiến - Personal Portfolio",
+    "Huỳnh Vĩnh Tiến Personal Portfolio Vercel",
     icons: {
       icon: "/logo_1.png",  // Đảm bảo đường dẫn đúng
       // icon: "https://static.vecteezy.com/system/resources/previews/009/126/098/non_2x/hvt-logo-hvt-letter-hvt-letter-logo-design-initials-hvt-logo-linked-with-circle-and-uppercase-monogram-logo-hvt-typography-for-technology-business-and-real-estate-brand-vector.jpg",
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
   ],
   colorScheme: "dark",
   openGraph: {
-    title: "Huỳnh Vĩnh Tiến - Personal Portfolio",
+    title: "Huỳnh Vĩnh Tiến Personal Portfolio",
     description:
-      "Huỳnh Vĩnh Tiến - Personal Portfolio",
+      "Huỳnh Vĩnh Tiến Personal Portfolio",
     url: "https://prsonal-portfolio-main.vercel.app/",
     siteName: "https://prsonal-portfolio-main.vercel.app/",
     images: [
@@ -60,9 +60,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Huỳnh Vĩnh Tiến - Personal Portfolio",
+    title: "Huỳnh Vĩnh Tiến Personal Portfolio",
     description:
-      "Huỳnh Vĩnh Tiến - Personal Portfolio",
+      "Huỳnh Vĩnh Tiến Personal Portfolio",
     creator: "huynhvinhtien", // username twitter của tôi
     creatorId: "1243720976552144897",
     images: [
