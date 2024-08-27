@@ -10,11 +10,11 @@ import vietnam from "./vietnam.png";
 import './style.css'
 import { Text } from '../Text';
 import LanguageSelector from '../containers/LanguageSelector';
-
-import dynamic from "next/dynamic";
-const ButtonToggle = dynamic(() => import("../toggle-section/ButtonToggle"));
 import clsx from 'clsx';
 import { useTheme } from 'next-themes';
+import dynamic from "next/dynamic";
+const ButtonToggle = dynamic(() => import("../toggle-section/ButtonToggle"));
+const OnlineOffline = dynamic(() => import("../online-offline-section/OnlineOffline"));
 
 const Hero = () => {
   const { theme } = useTheme(); 
@@ -62,6 +62,21 @@ const Hero = () => {
         </div>
 
         <div className="gap-10 hidden lg:flex text-[#e4ded7] sm:gap-12 md:gap-14 lg:gap-14">
+        <Link
+            href="/"
+            target="_blank"
+            aria-label="View GitHub Profile"
+          >
+            <motion.p
+              className={clsx(
+                'text-[16px] font-bold md:text-[16px]',
+                textColor // Sử dụng state để đảm bảo đồng bộ
+              )}
+              variants={bodyAnimation}
+            >
+              <OnlineOffline/>
+            </motion.p>
+          </Link>
           <Link
             href="/"
             target="_blank"
