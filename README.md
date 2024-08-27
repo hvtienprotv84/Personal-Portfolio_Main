@@ -10,9 +10,11 @@
 
 <div align="center">
   
-  [![My Skills](https://skillicons.dev/icons?i=react,nextjs,ts,tailwind,docker)](https://skillicons.dev)
+  [![My Skills](https://skillicons.dev/icons?i=react,nextjs,ts,tailwind)](https://skillicons.dev)
   ![My Skills](https://go-skill-icons.vercel.app/api/icons?i=gsap&perline=3)
-  [![My Skills](https://skillicons.dev/icons?i=gmail)](https://skillicons.dev)
+  [![My Skills](https://skillicons.dev/icons?i=docker,github,vercel,gmail)](https://skillicons.dev)
+  <img src="https://png.pngtree.com/png-vector/20230308/ourmid/pngtree-toogle-swich-day-and-night-or-light-dark-mode-with-scenery-vector-png-image_6637912.png" width="48" height="48" />
+  <img src="https://cdn-icons-png.flaticon.com/512/6261/6261546.png" width="48" height="48" />
 </div>  
 
 
@@ -23,10 +25,12 @@
 - Framer Motion  
 - GSAP
 - Docker
+- Github Calendar / Github Graph
 - Gửi Email
 - Đa Ngôn Ngữ: Tiếng Việt, Tiếng Anh, Tiếng Đức, Tiếng Hàn, Tiếng Nhật, Tiếng Trung,...
 - Toggle Dark Mode / Light Mode
-- Responsive Website và Mobile 
+- Responsive Website và Mobile
+- Deployed Vercel
   
 ## Run
 
