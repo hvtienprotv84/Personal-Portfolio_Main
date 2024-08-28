@@ -34,9 +34,9 @@ body {
   overscroll-behavior: none;
 }
 
-body {
+/* body {
   overflow-y: hidden;
-}
+} */
 
 /* Ví dụ về các lớp dark mode */
 .dark {
