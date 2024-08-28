@@ -15,7 +15,7 @@ export const devProjects = [
     name: "Portfolio ReactJS",
     description:
       "This is a website for a Fintech Startup to showcase their innovative solutions tailored to meet the evolving needs of their clients.",
-    technologies: ["ReactJS", "Tailwind CSS"],
+    technologies: ["JavaScript", "ReactJS", "Tailwind CSS", "Vite"],
     github: "https://github.com/hvtienprotv84/Portfolio_ReactJS_TypeScript_Multiple-Languages",
     demo: "https://portfolio-react-js-type-script-multiple-languages.vercel.app/",
     image: require(".//../../public/projects/react.webp"),
@@ -65,51 +65,6 @@ export const devProjects = [
     image: require(".//../../public/projects/nuxt.png"),
     available: true,
   },
-  // {
-  //   id: 4,
-  //   name: "Alpaca Image Generator",
-  //   description:
-  //     "An image generator website that allows users to generate, combine, and download images.",
-  //   technologies: ["React", "CSS", "Merge Images"],
-  //   github: "/",
-  //   demo: "http://alpaca-image-generator-beta.vercel.app",
-  //   image: require(".//../../public/projects/alpaca-flip.png"),
-  //   available: true,
-  // },
-
-  // {
-  //   id: 5,
-  //   name: "Link Shortener",
-  //   description:
-  //     "A website that reduces the length of your URL using Bit.ly's API",
-  //   technologies: ["JavaScript", "CSS", "Bit.ly's API"],
-  //   github: "/",
-  //   demo: "https://url-shortener-nine-delta.vercel.app",
-  //   image: require(".//../../public/projects/shortener-new.webp"),
-  //   available: true,
-  // },
-  // {
-  //   id: 6,
-  //   name: "Carpooling Service",
-  //   description:
-  //     "TMTM helps Covenant University students find fellow students who are headed to the same location, so they can share a ride and split the cost.",
-  //   technologies: ["Material UI", "React", "Formik"],
-  //   github: "/",
-  //   demo: "",
-  //   image: require(".//../../public/projects/carpool-new.webp"),
-  //   available: false,
-  // },
-  // {
-  //   id: 7,
-  //   name: "MLSC.ng",
-  //   description:
-  //     "This is platform for Microsoft Learn Student Ambassadors to shorten links, append their sharing IDs and generate event certificates.",
-  //   technologies: ["Next.js", "Next Auth", "Tailwind CSS"],
-  //   github: "https://github.com/msp-nigeria/mlsc.ng-frontend",
-  //   demo: "",
-  //   image: require(".//../../public/projects/mlsc.png"),
-  //   available: false,
-  // },
 ];
 
 export const designProjects = [

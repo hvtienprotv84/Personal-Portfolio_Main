@@ -128,7 +128,7 @@ const ProjectCard = ({
           // className={
           //   "max-w-[90%] text-[28px] leading-none text-white md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[45px] lg:leading-none"
           className={clsx(
-            'max-w-[90%] text-[28px] leading-none md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[45px] lg:leading-none',
+            'max-w-[90%] text-[28px] lg:mt-[-20px] leading-none md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[45px] lg:leading-none',
             textColor
           )}
           wordSpace={"mr-[0.25em]"}
@@ -140,7 +140,76 @@ const ProjectCard = ({
             "mt-4 w-[90%] max-w-[457px] text-[16px] font-semibold text-[#95979D] "
           }
         />
-        <div className="mt-9 flex gap-4">
+        <div className="mt-9 flex flex-wrap gap-4 lg:w-[450px]">
+        {technologies.map((tech, id) => {
+          // Xác định các lớp CSS cho các công nghệ khác nhau
+          let bgColorClass;
+          if (tech === "JavaScript") {
+            bgColorClass = "bg-[#f9dc43]"; // Màu nền vàng
+          } else if (tech === "ReactJS") {
+            bgColorClass = "bg-[#61dafb]"; // Màu nền xanh nước biển
+          } else if (tech === "Tailwind CSS") {
+            bgColorClass = "bg-[#16becb]"; // Màu nền xanh lá cây
+          }else if (tech === "Vite") {
+            bgColorClass = "bg-[#aa55ff]"; // Màu nền xanh lá cây
+          }else if (tech === "VueJS") {
+            bgColorClass = "bg-[#47ba87]"; // Màu nền xanh lá cây
+          }else if (tech === "Angular") {
+            bgColorClass = "bg-[#c50836]"; // Màu nền xanh lá cây
+          }else if (tech === "TypeScript") {
+            bgColorClass = "bg-[#377cc8]"; // Màu nền xanh lá cây
+          }else if (tech === "CSS") {
+            bgColorClass = "bg-[#306af1]"; // Màu nền xanh lá cây
+          }else if (tech === "NextJS") {
+            bgColorClass = "bg-[#000000] border-[1px] border-white"; // Màu nền xanh lá cây
+          }else if (tech === "NuxtJS") {
+            bgColorClass = "bg-[#00dc82]"; // Màu nền xanh lá cây
+          }
+
+          // Tạo phần tử cho mỗi công nghệ
+          const displayContent = (
+            <div className="flex items-center">
+              {bgColorClass && (
+                <div className={`${bgColorClass} w-[12px] h-[12px] rounded-full mr-[5px]`}></div>
+              )}
+              <span className="text-[10px] font-bold md:text-[16px] lg:text-[18px]">
+                {tech}
+              </span>
+            </div>
+          );
+
+            return (
+              <div
+                  key={id}
+                  className="mr-[0.25em]">
+                  {displayContent}
+              </div>
+            );
+            })}
+            </div>
+
+            {/* BẢN GỐC ĐÃ THÊM ĐIỀU KIỆN */}
+            {/* <div className="mt-9 flex gap-4">
+              {technologies.map((tech, id) => {
+                // Kiểm tra nếu tên công nghệ là "JavaScript"
+                const displayText = tech === "JavaScript" ? `A${tech}` : tech;
+
+                return (
+                  <AnimatedTitle
+                    text={displayText}
+                    wordSpace={"mr-[0.25em]"}
+                    charSpace={"mr-[0.01em]"}
+                    key={id}
+                    className={
+                      "text-[10px] font-bold md:text-[16px] lg:text-[18px] "
+                    }
+                  />
+                );
+              })}
+            </div> */}
+
+        {/* BẢN GỐC */}
+        {/* <div className="mt-9 flex gap-4">
           {technologies.map((tech, id) => (
             <AnimatedTitle
               text={tech}
@@ -148,11 +217,12 @@ const ProjectCard = ({
               charSpace={"mr-[0.01em]"}
               key={id}
               className={
-                "text-[10px] font-bold uppercase md:text-[16px] lg:text-[18px] "
+                "text-[10px] font-bold md:text-[16px] lg:text-[18px] "
               }
             />
           ))}
-        </div>
+        </div> */}
+
       </div>
     </motion.div>
   );
