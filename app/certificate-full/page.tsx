@@ -11,10 +11,10 @@ import { useRouter } from 'next/router';
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { imageAnimation, bodyAnimation } from "../animations/animations";
-import NavBar from "../navbar/NavBar";
+import Navbar from "../navbar/NavBar";
 import Footer from "../footer/Footer";
 
-const CertificateFull = () => {
+const Blog = () => {
   const { theme } = useTheme(); 
   const [textColor, setTextColor] = useState('');
   const [bgColor, setBackgroundColor] = useState('');
@@ -25,20 +25,12 @@ const CertificateFull = () => {
     setBackgroundColor(theme === 'dark' ? 'bg-[#0E1016]' : 'bg-[#e4ded7]');
   }, [theme]);  
 
-  // const router = useRouter();
-
-  // const handleClick = () => {
-  //   router.push('/about');
-  // };
-
-
   return (
-    <div className="relative min-h-screen overflow-auto">
-    <section className={clsx("z-10 lg:h-full flex w-full flex-col h-full max-h-full items-center justify-center overflow-auto bg-[#0E1016] bg-cover bg-center pt-20 md:pb-16 lg:pb-32",
+    <div className="flex flex-col">
+    <section className={clsx("z-10 flex w-full mt-[-100px] lg:mt-[-100px] flex-col items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center pt-20 md:pb-16 lg:pb-32",
       bgColor  
       )}
       >
-              <NavBar/>
       <div id="certificate" className="mb-[60px]"></div>
       <div
         className={`relative mb-16 flex w-full flex-col items-center justify-center gap-10  text-[#e4ded7] sm:items-center lg:max-w-[1440px]`}
@@ -46,7 +38,7 @@ const CertificateFull = () => {
         {" "}
         <AnimatedWords2
           title={"certificate"}
-          style={clsx(`flex max-w-[500px] mt-[-50px] pr-5 flex-col items-start text-left ${monaSans.className} font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center lg:text-center text-[clamp(70px,10vw,155.04px)]`,
+          style={clsx(`flex max-w-[500px] pr-5 flex-col items-start text-left ${monaSans.className} font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center lg:text-center text-[clamp(70px,10vw,155.04px)]`,
             textColor  
           )}
         />
@@ -70,12 +62,11 @@ const CertificateFull = () => {
           );
         })}
       </div>
-      <div className='mt-[500px]'></div>
-      {/* <p onClick={handleClick} className='font-bold text-[20px] p-[20px]'>Xem Thêm</p> */}
-      <Footer/>
+      <div className='pb-[50px]'></div>
     </section>
+       <Footer/>
     </div>
   );
 };
 
-export default CertificateFull;
+export default Blog;
