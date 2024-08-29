@@ -36,7 +36,7 @@ const FormContact = () => {
       <motion.div className="flex flex-col py-24">
       <AnimatedWords2
           title={"Email-Contact"}
-          style={clsx(`flex mt-[-50px] lg:ml-[0px] ml-[15px] text-[64px] lg:text-[155px] lg:max-w-full lg:mt-[-150px] lg:h-[350px] mb-[50px] flex-col items-start text-left ${monaSans.className} font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center lg:mt-[-20px] lg:text-center text-[clamp(70px,14vw,155.04px)]`,
+          style={clsx(`flex mt-[-50px] lg:ml-[0px] ml-[25px] text-[60px] lg:text-[155px] lg:max-w-full lg:mt-[-150px] lg:h-[350px] mb-[50px] flex-col items-start text-left ${monaSans.className} font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center lg:mt-[-20px] lg:text-center text-[clamp(70px,14vw,155.04px)]`,
             textColor  
           )}
           /> 
