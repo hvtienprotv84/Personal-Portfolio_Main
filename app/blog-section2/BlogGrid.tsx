@@ -66,7 +66,7 @@ const Blog = () => {
           >
             <motion.p
               className={clsx(
-                'font-bold text-[20px] p-[20px]',
+                'font-bold text-[24px] p-[24px]',
                 textColor // Sử dụng state để đảm bảo đồng bộ
               )}
               variants={bodyAnimation}
