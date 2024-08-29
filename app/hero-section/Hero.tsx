@@ -61,7 +61,7 @@ const Hero = () => {
           </Link>
         </div>
 
-        <div className="gap-10 hidden lg:flex text-[#e4ded7] sm:gap-12 md:gap-14 lg:gap-14">
+        <div className="gap-10 lg:flex text-[#e4ded7] sm:gap-12 md:gap-14 lg:gap-14">
         <Link
             href="/"
             target="_blank"
@@ -69,7 +69,7 @@ const Hero = () => {
           >
             <motion.p
               className={clsx(
-                'text-[16px] font-bold md:text-[16px]',
+                'text-[16px] font-bold md:text-[16px] mt-[120px] lg:mt-[0px] lg:ml-[0px]',
                 textColor // Sử dụng state để đảm bảo đồng bộ
               )}
               variants={bodyAnimation}
@@ -84,7 +84,7 @@ const Hero = () => {
           >
             <motion.p
               className={clsx(
-                'text-[16px] font-bold md:text-[16px]',
+                'text-[16px] font-bold md:text-[16px] hidden lg:block',
                 textColor // Sử dụng state để đảm bảo đồng bộ
               )}
               variants={bodyAnimation}
@@ -99,7 +99,7 @@ const Hero = () => {
           >
             <motion.p
               className={clsx(
-                'text-[16px] font-bold md:text-[16px]',
+                'text-[16px] font-bold md:text-[16px] hidden lg:block',
                 textColor // Sử dụng state để đảm bảo đồng bộ
               )}
               variants={bodyAnimation}
@@ -114,7 +114,7 @@ const Hero = () => {
           >
             <motion.p
               className={clsx(
-                'text-[16px] font-bold md:text-[16px]',
+                'text-[16px] font-bold md:text-[16px] hidden lg:block',
                 textColor // Sử dụng state để đảm bảo đồng bộ
               )}
               variants={bodyAnimation}
@@ -129,7 +129,7 @@ const Hero = () => {
           >
             <motion.p
               className={clsx(
-                'text-[16px] font-bold md:text-[16px]',
+                'text-[16px] font-bold md:text-[16px] hidden lg:block',
                 textColor // Sử dụng state để đảm bảo đồng bộ
               )}
               variants={bodyAnimation}
@@ -144,7 +144,7 @@ const Hero = () => {
           >
             <motion.p
               className={clsx(
-                'text-[16px] font-bold md:text-[16px]',
+                'text-[16px] font-bold md:text-[16px] hidden lg:block',
                 textColor // Sử dụng state để đảm bảo đồng bộ
               )}
               variants={bodyAnimation}
@@ -181,7 +181,7 @@ const Hero = () => {
         
             <motion.p
               className={clsx(
-                'text-[16px] font-bold lg:text-[10px] lg:mt-[-7px] z-50 lg:mr-[-5px] rounded-t-lg',
+                'text-[16px] font-bold lg:text-[10px] lg:mt-[-7px] z-50 lg:mr-[-5px] rounded-t-lg hidden lg:block',
                 textColor // Sử dụng state để đảm bảo đồng bộ
               )} 
               variants={bodyAnimation}
@@ -190,7 +190,7 @@ const Hero = () => {
             </motion.p>
 
             <motion.p
-              className="text-[16px] font-bold text-[#e4ded7] md:text-[16px]"
+              className="text-[16px] font-bold text-[#e4ded7] mt-[-100px] lg:mt-[0px] md:text-[16px]"
               variants={bodyAnimation}
             >
               <ButtonToggle/>
