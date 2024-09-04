@@ -28,6 +28,7 @@
 - Docker
 - Github Calendar / Github Graph
 - Gửi Email
+- Fetch API bằng Axios
 - Đa Ngôn Ngữ: Tiếng Việt, Tiếng Anh, Tiếng Đức, Tiếng Hàn, Tiếng Nhật, Tiếng Trung,...
 - Toggle Dark Mode / Light Mode
 - Responsive Website và Mobile
