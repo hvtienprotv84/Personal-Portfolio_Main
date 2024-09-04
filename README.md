@@ -35,6 +35,7 @@
   
 ## Run
 
+<!--
 ```bash
   npm install
 ```
@@ -44,6 +45,12 @@
 ```bash
   localhost:3000
 ```
+-->
+
+- `npm install`
+- `npm run dev`
+- `localhost:3000`
+
 
 ## Run Docker
  
