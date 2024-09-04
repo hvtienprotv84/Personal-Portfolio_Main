@@ -26,11 +26,17 @@ const AboutMe: React.FC = () => {
 
   const { theme } = useTheme();
   const [textColor, setTextColor] = useState("");
+  const [textColorName, setTextColorName] = useState("");
+  const [textColor2, setTextColor2] = useState("");
+  const [textColorTech, setTextColorTech] = useState("");
   const [bgColor, setBackgroundColor] = useState("");
 
   useEffect(() => {
     // Cập nhật màu sắc dựa trên theme
     setTextColor(theme === 'dark' ? 'text-[#e4ded7]' : 'text-[#ffb800]')
+    setTextColorName(theme === 'dark' ? 'text-[#00ff90]' : 'text-[#f1490b]')
+    setTextColorTech(theme === 'dark' ? 'text-[#e8ff00]' : 'text-[#0b00ff]')
+    setTextColor2(theme === 'dark' ? 'text-[#e4ded7]' : 'text-[#000000]')
     // setBackgroundColor(theme === 'dark' ? 'bg-[#0E1016]' : 'bg-[#e4ded7]');
     setBackgroundColor(theme === "dark" ? "bg-[#0E1016]" : "bg-[#e4ded7]");
   }, [theme]);
@@ -84,34 +90,38 @@ const AboutMe: React.FC = () => {
                   text={post.name}
                   className={clsx(
                     'max-w-[90%] font-bold font-sans text-[35px] lg:text-[45px] lg:mt-[-20px] leading-none md:text-[44px] md:leading-none lg:max-w-[450px] lg:leading-none',
-                    textColor
+                    textColorName
                   )}
                   wordSpace={"mr-[0.25em]"}
                   charSpace={"-mr-[0.01em]"}
                 />
                  <AnimatedBody
                   text={post.technologies}
-                  className={
-                    "mt-4 w-[100%] text-[20px] lg:text-[24px] font-semibold text-[#95979D] "
-                  }
+                  className={clsx(
+                    "mt-4 w-[100%] text-[20px] lg:text-[24px] font-bold font-sans",
+                    textColorTech
+                  )}
                 />
                 <AnimatedBody
                   text={post.content}
-                  className={
-                    "mt-4 w-[100%] text-[16px] lg:text-[20px] font-semibold text-[#95979D] "
-                  }
+                  className={clsx(
+                    "mt-4 w-[100%] text-[16px] lg:text-[20px] font-semibold font-sans",
+                    textColor2
+                  )}
                 />
                 <AnimatedBody
                   text={`Niên khóa: ${post.graduate}`}
-                  className={
-                    "mt-4 w-[100%] text-[16px] lg:text-[20px] font-semibold text-[#95979D] "
-                  }
+                  className={clsx(
+                    "mt-4 w-[100%] text-[16px] lg:text-[20px] font-semibold font-sans",
+                    textColor2
+                  )}
                 />
                 <AnimatedBody
                   text={`Kinh nghiệm: ${post.exp}`}
-                  className={
-                    "mt-4 w-[100%] text-[16px] lg:text-[20px] font-semibold text-[#95979D] "
-                  }
+                  className={clsx(
+                    "mt-4 w-[100%] text-[16px] lg:text-[20px] font-semibold font-sans",
+                    textColor2
+                  )}
                 />
               </motion.div>
             </motion.div>
