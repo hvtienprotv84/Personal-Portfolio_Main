@@ -19,6 +19,7 @@ import { LanguageProvider } from '../app/containers/Language';
 
 const Work = dynamic(() => import("./work-section/Work"));
 // const About = dynamic(() => import("./about-section/About"));
+const AboutMe = dynamic(() => import("./aboutme-section/AboutMe"));
 const About2 = dynamic(() => import("./about-section2/About"));
 const About3 = dynamic(() => import("./about-section3/About"));
 const Blog2 = dynamic(() => import("./blog-section2/BlogGrid"));
@@ -58,6 +59,7 @@ export default function Home() {
         <main className="flex flex-col items-center justify-center">
           <Hero />
           {/* <LanguageSelector/> */}
+          <AboutMe/>
           <Work />
           <About2 />
           <About3 />
