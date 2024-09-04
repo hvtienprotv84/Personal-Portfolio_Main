@@ -13,6 +13,7 @@
   [![My Skills](https://skillicons.dev/icons?i=react,nextjs,ts,tailwind)](https://skillicons.dev)
   ![My Skills](https://go-skill-icons.vercel.app/api/icons?i=gsap,api&perline=3)
   [![My Skills](https://skillicons.dev/icons?i=docker,github,vercel,gmail)](https://skillicons.dev)
+  <img src="https://www.nimbleappgenie.com/images/nodejs-freamework-tech08.webp" width="47" height="47" />
   <img src="https://png.pngtree.com/png-vector/20230308/ourmid/pngtree-toogle-swich-day-and-night-or-light-dark-mode-with-scenery-vector-png-image_6637912.png" width="48" height="48" />
   <img src="https://icons.iconarchive.com/icons/marcus-roberto/google-play/512/Google-Translate-icon.png" width="48" height="48" />
   <img src="https://cdn-icons-png.flaticon.com/512/6261/6261546.png" width="48" height="48" />
