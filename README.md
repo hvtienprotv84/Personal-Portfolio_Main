@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Personal Portfolio Website - Main</h1>   
-</div>   
+</div>    
 
 <div align="center">
   <img src="./public/qr.png" alt="QR Code" width="200" />
