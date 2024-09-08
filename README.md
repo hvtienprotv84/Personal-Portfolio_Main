@@ -2,7 +2,7 @@
   <h1>Personal Portfolio Website - Main</h1>   
 </div>    
 
-<div align="center">
+<div align="center"> 
   <img src="./public/qr.png" alt="QR Code" width="200" />
 </div>  
 
