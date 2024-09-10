@@ -1,5 +1,3 @@
-// app/page.js
-
 "use client";
 import { useState, useEffect } from "react";
 
@@ -16,11 +14,11 @@ export default function Home() {
 
   return (
     <>
-      <h1 className="relative mt-3 ml-[45%] text-white text-3xl p-3 font-bold border inline-block">
+      {/* <h1 className="relative mt-3 ml-[45%] text-white text-3xl p-3 font-bold border inline-block">
         Books List
       </h1>
-      <br />
-      <div className="w-[45%] p-3 bg-white rounded-md shadow-md mx-auto my-5">
+      <br /> */}
+      <div className="w-[90%] p-3 bg-white rounded-md shadow-md mx-auto my-5">
         {books.length === 0 ? (
           <p>No books available.</p>
         ) : (
@@ -31,6 +29,7 @@ export default function Home() {
             >
               <h1 className="text-blue-700 font-bold">{`Title: ${book.title}`}</h1>
               <p className="text-green-600">{`Author: ${book.author}`}</p>
+              <br/>
             </div>
           ))
         )}
