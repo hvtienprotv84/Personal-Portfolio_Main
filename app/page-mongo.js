@@ -18,7 +18,7 @@ export default function Home() {
         Books List
       </h1>
       <br /> */}
-      <div className="w-[90%] p-3 bg-white rounded-md shadow-md mx-auto my-5">
+      <div className="w-[90%] p-3 bg-white flex flex-col rounded-md shadow-md mx-auto my-5">
         {books.length === 0 ? (
           <p>No books available.</p>
         ) : (
