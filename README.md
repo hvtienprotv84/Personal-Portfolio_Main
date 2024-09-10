@@ -30,6 +30,7 @@
 - Github Calendar / Github Graph
 - Gửi Email
 - Fetch API bằng Axios
+- MongoDB (Dùng MongoDB Atlas)
 - Đa Ngôn Ngữ: Tiếng Việt, Tiếng Anh, Tiếng Đức, Tiếng Hàn, Tiếng Nhật, Tiếng Trung,...
 - Toggle Dark Mode / Light Mode
 - Responsive Website và Mobile
