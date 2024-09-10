@@ -29,6 +29,7 @@
     "framer-motion": "^10.6.1",
     "gsap": "^3.11.5",
     "i18next": "^23.14.0",
+    "mongodb": "^6.8.1",
     "next": "13.2.3",
     "next-themes": "^0.3.0",
     "react": "^18.2.0",

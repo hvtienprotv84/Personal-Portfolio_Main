@@ -17,6 +17,7 @@ import './globals.css';
 // import LanguageSelector from '../app/containers/LanguageSelector';
 import { LanguageProvider } from '../app/containers/Language';
 
+const Mongo = dynamic(() => import("./page-mongo"));
 const Work = dynamic(() => import("./work-section/Work"));
 // const About = dynamic(() => import("./about-section/About"));
 const AboutMe = dynamic(() => import("./aboutme-section/AboutMe"));
@@ -59,6 +60,9 @@ export default function Home() {
         <main className="flex flex-col items-center justify-center">
           <Hero />
           {/* <LanguageSelector/> */}
+          <div className="p-[300px]"> 
+          <Mongo/>
+          </div>
           <AboutMe/>
           <Work />
           <About2 />
