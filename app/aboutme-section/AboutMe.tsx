@@ -61,7 +61,7 @@ const AboutMe: React.FC = () => {
 
   return (
     <motion.section
-      className={clsx("relative w-full items-center justify-center mb-[-150px] lg:mb-[-200px] overflow-hidden bg-[#0E1016] bg-cover bg-center pt-16 pb-36 md:pt-20 md:pb-44 lg:mt-[-100px] lg:pb-56",
+      className={clsx("relative w-full items-center mt-[-20px] justify-center mb-[-150px] lg:mb-[-200px] overflow-hidden bg-[#0E1016] bg-cover bg-center pt-16 pb-36 md:pt-20 md:pb-44 lg:mt-[-100px] lg:pb-56",
         bgColor  
       )}
     >

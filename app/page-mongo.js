@@ -33,12 +33,12 @@ export default function Home() {
         Books List
       </h1>
       <br /> */}
-      <div className={clsx("lg:w-full pt-[20px] pb-[80px] lg:flex-wrap mt-0 flex flex-col shadow-md mx-auto my-5",
+      <div className={clsx("w-full pt-[20px] lg:pb-[80px] pb-[20px] lg:flex-wrap mt-0 flex flex-col shadow-md mx-auto my-5",
          bgColor
       )}
       >
         {books.length === 0 ? (
-          <p className="font-sans font-bold flex justify-center items-center">Không có sự kiện nào gần đây!</p>
+          <p className="font-sans p-3 font-bold flex justify-center items-center">Không có sự kiện nào gần đây!</p>
         ) : (
           books.map((book) => (
             <>
