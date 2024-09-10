@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import AnimatedTitle from "../animations/AnimatedTitle";
 import AnimatedBody from "../animations/AnimatedBody";
 import api from "../../public/logo-api.png";
+import { imageAnimation, bodyAnimation } from "../animations/animations";
 
 interface Post {
   id: number;
@@ -131,17 +132,28 @@ const AboutMe: React.FC = () => {
                 
         ))
       ) : (
-        <motion.div className='flex justify-center font-sans font-bold p-3'>Không có bài viết nào!</motion.div>
+        // <motion.div className='flex justify-center font-sans font-bold p-3'>Không có bài viết nào!</motion.div>
+        <AnimatedBody
+          text={`Không có bài viết nào!`}
+          className="flex justify-center font-sans font-bold p-3"
+        />
       )}
       {/* <motion.div className='flex justify-center font-sans font-bold pb-3'>(Dữ liệu được tạo và hiển thị bởi API)</motion.div> */}
       <motion.div className="flex flex-row justify-center item-center font-sans font-bold pb-3">
-          <motion.span className="">(Dữ liệu được tạo và hiển thị bởi </motion.span>
+          {/* <motion.span className="">(Dữ liệu được tạo và hiển thị bởi </motion.span> */}
+            <AnimatedBody
+              text={`(Dữ liệu được tạo và hiển thị bởi `}
+            />
           <Image
             src={api}
             alt="hero"
-            className="lg:w-[20px] w-[20px] ml-[5px]"
+            className="w-[25px] ml-[5px]"
           />
-          <motion.span className="ml-[5px]">API)</motion.span>
+          {/* <motion.span className="ml-[5px]">API)</motion.span> */}
+          <AnimatedBody
+              text={`API)`}
+              className="ml-[5px]"
+            />
         </motion.div>
     </motion.section>
     </>
