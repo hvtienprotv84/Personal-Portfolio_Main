@@ -9,6 +9,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import AnimatedTitle from "../animations/AnimatedTitle";
 import AnimatedBody from "../animations/AnimatedBody";
+import api from "../../public/logo-api.png";
 
 interface Post {
   id: number;
@@ -60,6 +61,7 @@ const AboutMe: React.FC = () => {
   if (error) return <div>Error: {error}</div>;
 
   return (
+    <>
     <motion.section
       className={clsx("relative w-full items-center mt-[-20px] justify-center mb-[-150px] lg:mb-[-200px] overflow-hidden bg-[#0E1016] bg-cover bg-center pt-16 pb-36 md:pt-20 md:pb-44 lg:mt-[-100px] lg:pb-56",
         bgColor  
@@ -129,9 +131,20 @@ const AboutMe: React.FC = () => {
                 
         ))
       ) : (
-        <motion.div>No posts available</motion.div>
+        <motion.div className='flex justify-center font-sans font-bold p-3'>Không có bài viết nào!</motion.div>
       )}
+      {/* <motion.div className='flex justify-center font-sans font-bold pb-3'>(Dữ liệu được tạo và hiển thị bởi API)</motion.div> */}
+      <motion.div className="flex flex-row justify-center item-center font-sans font-bold pb-3">
+          <motion.span className="">(Dữ liệu được tạo và hiển thị bởi </motion.span>
+          <Image
+            src={api}
+            alt="hero"
+            className="lg:w-[20px] w-[20px] ml-[5px]"
+          />
+          <motion.span className="ml-[5px]">API)</motion.span>
+        </motion.div>
     </motion.section>
+    </>
   );
 };
 
