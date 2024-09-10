@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import clsx from 'clsx';
 import { useTheme } from 'next-themes';
 import vietnam from "../public/star-vietnam.png";
+import mongo from "../public/logo-mongo.png";
 import Image from "next/image";
 import './globals.css';
 
@@ -65,7 +66,16 @@ export default function Home() {
             </>
           ))
         )}
-        <span className="font-sans font-bold flex justify-center items-center">(Dữ liệu được tạo và hiển thị bởi MongoDB)</span>
+        {/* <span className="font-sans font-bold flex justify-center items-center">(Dữ liệu được tạo và hiển thị bởi MongoDB)</span> */}
+        <div className="flex flex-row justify-center item-center font-sans font-bold">
+          <span className="">(Dữ liệu được tạo và hiển thị bởi </span>
+          <Image
+            src={mongo}
+            alt="hero"
+            className="lg:w-[10px] w-[10px] ml-[5px]"
+          />
+          <span className="ml-[5px]">MongoDB)</span>
+        </div>
       </div>
     </>
   );
