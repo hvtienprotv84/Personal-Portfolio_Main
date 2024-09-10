@@ -60,9 +60,7 @@ export default function Home() {
         <main className="flex flex-col items-center justify-center">
           <Hero />
           {/* <LanguageSelector/> */}
-          <div className="pt-[0px] pb-[100px]"> 
           <Mongo/>
-          </div>
           <AboutMe/>
           <Work />
           <About2 />
