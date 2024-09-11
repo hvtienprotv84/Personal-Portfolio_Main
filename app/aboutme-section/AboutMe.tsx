@@ -10,7 +10,6 @@ import { motion } from "framer-motion";
 import AnimatedTitle from "../animations/AnimatedTitle";
 import AnimatedBody from "../animations/AnimatedBody";
 import api from "../../public/logo-api.png";
-import { imageAnimation, bodyAnimation } from "../animations/animations";
 
 interface Post {
   id: number;
