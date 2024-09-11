@@ -6,6 +6,8 @@ import vietnam from "../public/star-vietnam.png";
 import mongo from "../public/logo-mongo.png";
 import Image from "next/image";
 import './globals.css';
+import AnimatedBody from "../app/animations/AnimatedBody";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const [books, setBooks] = useState([]);
@@ -38,7 +40,15 @@ export default function Home() {
       )}
       >
         {books.length === 0 ? (
-          <p className="font-sans p-3 font-bold flex justify-center items-center">Không có sự kiện nào gần đây!</p>
+          <>
+          {/* <p className="font-sans p-3 font-bold flex justify-center items-center">Không có sự kiện nào gần đây!</p> */}
+          <motion.div>
+            <AnimatedBody
+                text={`Không có sự kiện nào gần đây!`}
+                className="font-sans p-3 font-bold flex justify-center items-center"
+            />
+          </motion.div>
+          </>
         ) : (
           books.map((book) => (
             <>
@@ -57,8 +67,16 @@ export default function Home() {
                       />
                     </div>
                   <div className="flex flex-col lg:ml-[15px] ml-[20px] lg:w-[95%] w-[80%]">
-                    <h1 className="text-[#ff0] font-bold font-sans w-full lg:text-[32px] text-[18px]">{`Sự kiện: ${book.title}`}</h1>
-                    <p className="text-[#ffffff] font-bold font-sans w-full lg:text-[16px] text-[14px]">{`Ngày đăng: ${book.author}`}</p>
+                    {/* <h1 className="text-[#ff0] font-bold font-sans w-full lg:text-[32px] text-[18px]">{`Sự kiện: ${book.title}`}</h1> */}
+                    <AnimatedBody
+                      text={`Sự kiện: ${book.title}`}
+                      className="text-[#ff0] font-bold font-sans w-full lg:text-[32px] text-[18px]"
+                    />
+                    <AnimatedBody
+                      text={`Ngày đăng: ${book.author}`}
+                      className="text-[#ffffff] font-bold font-sans w-full lg:text-[16px] text-[14px]"
+                    />
+                    {/* <p className="text-[#ffffff] font-bold font-sans w-full lg:text-[16px] text-[14px]">{`Ngày đăng: ${book.author}`}</p> */}
                   </div>
                 </div>
               </div>
@@ -67,15 +85,22 @@ export default function Home() {
           ))
         )}
         {/* <span className="font-sans font-bold flex justify-center items-center">(Dữ liệu được tạo và hiển thị bởi MongoDB)</span> */}
-        <div className="flex flex-row justify-center item-center font-sans font-bold">
-          <span className="">(Dữ liệu được tạo và hiển thị bởi </span>
+        <motion.div className="flex flex-row justify-center item-center font-sans font-bold">
+          {/* <span>(Dữ liệu được tạo và hiển thị bởi </span> */}
+            <AnimatedBody
+                text={`(Dữ liệu được tạo và hiển thị bởi `}
+              />
           <Image
             src={mongo}
             alt="hero"
             className="lg:w-[10px] w-[10px] ml-[5px]"
           />
-          <span className="ml-[5px]">MongoDB)</span>
-        </div>
+          {/* <span className="ml-[5px]">MongoDB)</span> */}
+          <AnimatedBody
+                text={`MongoDB)`}
+                className="ml-[5px]"
+              />
+        </motion.div>
       </div>
     </>
   );
