@@ -44,7 +44,8 @@
     "resize-observer-polyfill": "^1.5.1",
     "scroller-motion": "^1.2.3",
     "sharp": "^0.32.0",
-    "touch-cli": "^0.0.1"
+    "touch-cli": "^0.0.1",
+    "vue": "^3.0.0"
   },
   "devDependencies": {
     "@types/node": "18.15.0",
