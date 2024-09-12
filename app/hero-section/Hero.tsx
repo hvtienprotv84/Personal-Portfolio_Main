@@ -15,6 +15,8 @@ import { useTheme } from 'next-themes';
 import dynamic from "next/dynamic";
 const ButtonToggle = dynamic(() => import("../toggle-section/ButtonToggle"));
 const OnlineOffline = dynamic(() => import("../online-offline-section/OnlineOffline"));
+import NotificationIcon from '../NotificationIcon';
+import ReduxProvider from '../ReduxProvider';
 
 const Hero = () => {
   const { theme } = useTheme(); 
@@ -59,6 +61,12 @@ const Hero = () => {
               📞 CALL ME
             </motion.button>
           </Link>
+        </div>
+
+        <div>
+          <ReduxProvider>
+             <NotificationIcon/>
+          </ReduxProvider>
         </div>
 
         <div className="gap-10 lg:flex text-[#e4ded7] sm:gap-12 md:gap-14 lg:gap-14">
