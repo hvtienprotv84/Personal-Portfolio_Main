@@ -63,13 +63,28 @@ const Hero = () => {
           </Link>
         </div>
 
-        <div>
-          <ReduxProvider>
-             <NotificationIcon/>
-          </ReduxProvider>
-        </div>
-
         <div className="gap-10 lg:flex text-[#e4ded7] sm:gap-12 md:gap-14 lg:gap-14">
+        {/* <motion.p
+              className={clsx(
+                'text-[16px] font-bold md:text-[16px] mt-[120px] lg:mt-[0px] lg:ml-[0px]',
+                textColor // Sử dụng state để đảm bảo đồng bộ
+              )}
+              variants={bodyAnimation}
+            >
+              <ReduxProvider>
+                <NotificationIcon/>
+              </ReduxProvider>
+        </motion.p> */}
+
+          <motion.div
+            variants={bodyAnimation}
+            className='absolute w-full mt-[50px] left-0 hidden lg:block'
+          >
+              <ReduxProvider>
+                <NotificationIcon/>
+              </ReduxProvider>
+          </motion.div>
+
         <Link
             href="/"
             target="_blank"
