@@ -147,3 +147,11 @@ body {
   margin-left: 10px;
   color:white;
 }
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.z-index{
+  z-index: 9999999;
+}
