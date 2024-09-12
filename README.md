@@ -10,7 +10,7 @@
 
 <div align="center">
   
-  [![My Skills](https://skillicons.dev/icons?i=react,nextjs,ts,tailwind,mongodb)](https://skillicons.dev)
+  [![My Skills](https://skillicons.dev/icons?i=react,nextjs,ts,redux,tailwind,mongodb)](https://skillicons.dev)
   ![My Skills](https://go-skill-icons.vercel.app/api/icons?i=gsap,api&perline=3)
   [![My Skills](https://skillicons.dev/icons?i=docker,github,vercel,gmail)](https://skillicons.dev)
   <img src="https://www.nimbleappgenie.com/images/nodejs-freamework-tech08.webp" width="47" height="47" />
