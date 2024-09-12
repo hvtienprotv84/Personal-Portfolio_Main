@@ -78,7 +78,7 @@ const Hero = () => {
 
           <motion.div
             variants={bodyAnimation}
-            className='absolute w-full mt-[50px] left-0 hidden lg:block'
+            className='absolute w-full mt-[60px] left-0 hidden lg:block'
           >
               <ReduxProvider>
                 <NotificationIcon/>
