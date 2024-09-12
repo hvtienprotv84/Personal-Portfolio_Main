@@ -18,25 +18,26 @@ const NotificationList: React.FC = () => {
 
   useEffect(() => {
     // Cập nhật màu sắc dựa trên theme
-    setTextColor(theme === 'dark' ? 'text-[#000000]' : 'text-[#ffb800]')
+    setTextColor(theme === 'dark' ? 'text-[#000000]' : 'text-[#ff0000]')
   }, [theme]);  
   
   return (
-      <div className='absolute w-full max-w-[300px] top-[50px] mt-[-50px] left-[50px] right-[10px] bg-white rounded-md border-[1px] border-solid border-black p-[10px]'>
+      <div className='absolute w-full max-w-fit top-[50px] mt-[-50px] left-[55px] right-[10px] bg-white rounded-md border-[1px] border-solid border-black p-[10px]'>
         {notificationsToShow.length === 0 ? (
-          <p className='no-wrap'>No notifications</p>
+          <p className={clsx('no-wrap font-bold font-sans',
+            textColor
+            )}>Hiện không có thông báo nào! 😐
+          </p>
         ) : (
           <ul className='z-[9999] z-index w-full'>
             {notificationsToShow.map((notification) => (
               <li key={notification.id} className='flex flex-row w-full item-center'>
-                <span className={clsx('no-wrap',
+                <span className={clsx('no-wrap w-[95%] font-sans',
                 textColor
                 )}
                 >{notification.message}</span>
-                <button className={clsx('ml-[10px]', 
-                textColor
-                )} 
-                onClick={() => dispatch(removeNotification(notification.id))}>Remove</button>
+                <button className='ml-[10px] w-[5%] pr-[10px] font-bold font-sans text-black'
+                  onClick={() => dispatch(removeNotification(notification.id))}>X</button>
               </li>
             ))}
           </ul>
