@@ -74,6 +74,7 @@ const Hero = () => {
             href="/"
             target="_blank"
             aria-label="View GitHub Profile"
+            className='h-fit'
           >
             <motion.p
               className={clsx(
@@ -89,6 +90,7 @@ const Hero = () => {
             href="/"
             target="_blank"
             aria-label="View GitHub Profile"
+            className='h-fit'
           >
             <motion.p
               className={clsx(
@@ -104,6 +106,7 @@ const Hero = () => {
             href="/"
             target="_blank"
             aria-label="View LinkedIn Profile"
+            className='h-fit'
           >
             <motion.p
               className={clsx(
@@ -119,6 +122,7 @@ const Hero = () => {
             href="/"
             target="_blank"
             aria-label="View LinkedIn Profile"
+            className='h-fit'
           >
             <motion.p
               className={clsx(
@@ -134,6 +138,7 @@ const Hero = () => {
             href="/"
             target="_blank"
             aria-label="View Twitter Profile"
+            className='h-fit'
           >
             <motion.p
               className={clsx(
@@ -149,6 +154,7 @@ const Hero = () => {
             href="/"
             target="_blank"
             aria-label="View Contra Profile"
+            className='h-fit'
           >
             <motion.p
               className={clsx(
