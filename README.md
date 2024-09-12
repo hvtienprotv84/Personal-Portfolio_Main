@@ -22,7 +22,8 @@
 
 - ReactJS  
 - NextJS
-- TypeScript 
+- TypeScript
+- Redux
 - Tailwind CSS 
 - Framer Motion  
 - GSAP
