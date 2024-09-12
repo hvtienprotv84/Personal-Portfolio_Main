@@ -11,9 +11,9 @@ interface NotificationState {
 
 const initialState: NotificationState = {
   notifications: [
-    { id: 1, message: 'Notification 1' },
-    { id: 2, message: 'Notification 2' },
-    { id: 3, message: 'Notification 3' },
+    { id: 1, message: 'Chào mừng bạn đã đến với ngôi nhà nhỏ này của tôi 😍' },
+    { id: 2, message: 'Rất vui được bạn ghé thăm và được biết bạn! 🤩' },
+    { id: 3, message: 'Chúc bạn ngày mới vui vẻ! 🤠' },
   ],
 };
 

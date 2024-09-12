@@ -24,7 +24,7 @@ const NotificationList: React.FC = () => {
   return (
       <div className='absolute w-full max-w-fit top-[50px] mt-[-50px] left-[55px] right-[10px] bg-white rounded-md border-[1px] border-solid border-black p-[10px]'>
         {notificationsToShow.length === 0 ? (
-          <p className={clsx('no-wrap font-bold font-sans',
+          <p className={clsx('no-wrap font-semibold font-sans',
             textColor
             )}>Hiện không có thông báo nào! 😐
           </p>
@@ -32,7 +32,7 @@ const NotificationList: React.FC = () => {
           <ul className='z-[9999] z-index w-full'>
             {notificationsToShow.map((notification) => (
               <li key={notification.id} className='flex flex-row w-full item-center'>
-                <span className={clsx('no-wrap w-[95%] font-sans',
+                <span className={clsx('no-wrap w-[95%] font-sans font-semibold',
                 textColor
                 )}
                 >{notification.message}</span>
