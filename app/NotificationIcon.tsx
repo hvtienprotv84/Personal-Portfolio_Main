@@ -20,10 +20,10 @@ const NotificationIcon: React.FC = () => {
   };
 
   return (
-    <div className='relative pb-[500px]'>
+    <div className='relative pb-[500px] mt-[-3px]'>
       {/* <button onClick={handleAddNotification}>Add Notification</button> */}
       <button onClick={togglePopup} className='flex flex-row justify-center items-center'> 
-        <Image src={notification} alt="" className='w-[20px] h-[20px]'/>
+        <Image src={notification} alt="" className='w-[30px] h-[30px]'/>
         ({notifications.length})
       </button>
       {isPopupVisible && <NotificationList />}
