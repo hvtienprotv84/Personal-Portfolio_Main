@@ -5,6 +5,7 @@ import AnimatedWords2 from "../animations/AnimatedWords2";
 import clsx from "clsx";
 import { useTheme } from "next-themes";
 import profile from "../../public/hero-about.png";
+import verification from "../../public/verification.webp";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import AnimatedTitle from "../animations/AnimatedTitle";
@@ -88,15 +89,25 @@ const AboutMe: React.FC = () => {
                 />
               </motion.div>
               <motion.div className='lg:max-w-[800px] lg:ml-[100px]'>
-                <AnimatedTitle
-                  text={post.name}
-                  className={clsx(
-                    'max-w-[90%] font-bold font-sans text-[35px] lg:text-[45px] lg:mt-[-20px] leading-none md:text-[44px] md:leading-none lg:max-w-[450px] lg:leading-none',
-                    textColorName
-                  )}
-                  wordSpace={"mr-[0.25em]"}
-                  charSpace={"-mr-[0.01em]"}
-                />
+                <motion.div className='flex flex-row items-center'>
+                  <AnimatedTitle
+                    text={post.name}
+                    className={clsx(
+                      'max-w-[90%] font-bold font-sans text-[35px] lg:text-[45px] lg:mt-[-20px] leading-none md:text-[44px] md:leading-none lg:max-w-[450px] lg:leading-none',
+                      textColorName
+                    )}
+                    wordSpace={"mr-[0.25em]"}
+                    charSpace={"-mr-[0.01em]"}
+                  />
+                  <Image
+                    src={verification}
+                    priority
+                    alt="hero"
+                    data-blobity-tooltip="Đã xác minh"
+                    data-blobity-invert="false"
+                    className="w-[45px] mt-[-15px]"
+                  />
+                </motion.div>
                  <AnimatedBody
                   text={post.technologies}
                   className={clsx(
