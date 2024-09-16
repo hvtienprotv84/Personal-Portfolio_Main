@@ -9,7 +9,7 @@ const PreLoader = () => {
   }, []);
 
   return (
-    <div className="preloader gap-[5px] overflow-hidden text-[14px] sm:gap-[10px] sm:text-[16px] md:text-[18px] lg:text-[20px]">
+    <div className="preloader gap-[5px] h-full overflow-hidden text-[14px] sm:gap-[10px] sm:text-[16px] md:text-[18px] lg:text-[20px]">
       <div className="texts-container font-sans flex flex-col lg:flex-row items-center justify-center gap-[5px] overflow-hidden text-[20px] font-extrabold text-[#e4ded7] opacity-0 sm:gap-[10px] sm:text-[16px] md:text-[18px] lg:text-[20px]">
         <span>Tôi là Huỳnh Vĩnh Tiến,</span>
         <span>Software Engineer,</span>
