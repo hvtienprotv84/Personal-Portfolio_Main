@@ -36,8 +36,8 @@ const AboutMe: React.FC = () => {
   useEffect(() => {
     // Cập nhật màu sắc dựa trên theme
     setTextColor(theme === 'dark' ? 'text-[#e4ded7]' : 'text-[#ffb800]')
-    setTextColorName(theme === 'dark' ? 'text-[#00fdff]' : 'text-[#ff0000]')
-    setTextColorTech(theme === 'dark' ? 'text-[#e8ff00]' : 'text-[#2fd155]')
+    setTextColorName(theme === 'dark' ? 'text-[#ffffff]' : 'text-[#000000]')
+    setTextColorTech(theme === 'dark' ? 'text-[#159cf3]' : 'text-[#159cf3]')
     setTextColor2(theme === 'dark' ? 'text-[#e4ded7]' : 'text-[#000000]')
     // setBackgroundColor(theme === 'dark' ? 'bg-[#0E1016]' : 'bg-[#e4ded7]');
     setBackgroundColor(theme === "dark" ? "bg-[#0E1016]" : "bg-[#e4ded7]");
@@ -123,7 +123,7 @@ const AboutMe: React.FC = () => {
                   )}
                 />
                 <AnimatedBody
-                  text={`Niên khóa: ${post.graduate}`}
+                  text={`Niên khóa Đại học: ${post.graduate}`}
                   className={clsx(
                     "mt-4 w-[100%] text-[16px] lg:text-[20px] font-semibold font-sans",
                     textColor2
