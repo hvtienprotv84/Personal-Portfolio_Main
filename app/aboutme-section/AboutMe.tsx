@@ -93,7 +93,7 @@ const AboutMe: React.FC = () => {
                   <AnimatedTitle
                     text={post.name}
                     className={clsx(
-                      'max-w-[90%] font-bold font-sans text-[35px] lg:text-[45px] lg:mt-[-20px] leading-none md:text-[44px] md:leading-none lg:max-w-[450px] lg:leading-none',
+                      'max-w-[90%] font-bold font-sans text-[30px] lg:text-[45px] lg:mt-[-20px] leading-none md:text-[44px] md:leading-none lg:max-w-[450px] lg:leading-none',
                       textColorName
                     )}
                     wordSpace={"mr-[0.25em]"}
@@ -105,7 +105,7 @@ const AboutMe: React.FC = () => {
                     alt="hero"
                     data-blobity-tooltip="Đã xác minh"
                     data-blobity-invert="false"
-                    className="w-[45px] mt-[-15px]"
+                    className="w-[35px] mt-[0px] lg:w-[45px] lg:mt-[-15px]"
                   />
                 </motion.div>
                  <AnimatedBody
