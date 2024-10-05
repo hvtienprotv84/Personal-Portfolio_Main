@@ -5,6 +5,8 @@ import AnimatedBody from "../animations/AnimatedBody";
 import AnimatedTitle from "../animations/AnimatedTitle";
 import clsx from 'clsx';
 import { useTheme } from 'next-themes';
+import { monaSans } from "../fonts/monaSans";
+import AnimatedWords2 from "../animations/AnimatedWords2";
 
 const About = () => {
 
@@ -26,15 +28,12 @@ const About = () => {
       id="skills"
     >
       <div className="mx-auto flex w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px] lg:mb-[-100px] lg:mt-[-50px]">
-        <AnimatedTitle
-          text={
-            "SKILLS"
-          }
-          className={clsx("mb-10 text-left text-[40px] font-bold leading-[0.9em] tracking-tighter sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px]",
+      {" "}
+        <AnimatedWords2
+          title={"skills"}
+          style={clsx(`flex max-w-[500px] pr-5 flex-col items-start text-left ${monaSans.className} font-extrabold uppercase leading-[0.9em] text-[#e4ded7] sm:max-w-full sm:flex-row sm:items-center sm:justify-center sm:text-center lg:text-center lg:pb-[50px] text-[clamp(70px,10vw,155.04px)]`,
             textColor  
-        )}
-          wordSpace={"mr-[14px]"}
-          charSpace={"mr-[0.001em]"}
+          )}
         />
 
         <div className="mx-auto flex w-[100%] flex-col lg:max-w-[1200px] lg:flex-row lg:gap-20">
