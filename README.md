@@ -38,7 +38,7 @@
 - Responsive Website và Mobile 🖥️💻📱
 - Deployed Vercel 🌐
   
-## Run
+## Run 👨🏻‍💻
 
 <!--
 ```bash
