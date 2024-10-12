@@ -36,7 +36,7 @@
 - Toggle Dark Mode / Light Mode ☀️🌙
 - Chuyển Trang bằng Giọng Nói 🗣📢
 - Responsive Website và Mobile 🖥️💻📱
-- Deployed Vercel
+- Deployed Vercel 🌐
   
 ## Run
 
