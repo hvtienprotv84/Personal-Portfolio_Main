@@ -27,7 +27,7 @@
 - Tailwind CSS 
 - Framer Motion  
 - GSAP
-- Docker
+- Docker 🐳
 - Github Calendar / Github Graph
 - Gửi Email
 - Fetch API bằng Axios
