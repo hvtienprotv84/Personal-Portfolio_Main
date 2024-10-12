@@ -21,9 +21,9 @@
 
 
 - ReactJS ⚛
-- NextJS
-- TypeScript
-- Redux
+- NextJS 🇳
+- TypeScript 🇹🇸
+- Redux ⚛️
 - Tailwind CSS 
 - Framer Motion  
 - GSAP
