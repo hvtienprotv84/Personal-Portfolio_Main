@@ -32,7 +32,7 @@
 - Gửi Email 📧
 - Fetch API bằng Axios ⚡
 - [MongoDB (Dùng MongoDB Atlas)](https://account.mongodb.com/account/login?nds=true) 🍃
-- Đa Ngôn Ngữ: Tiếng Việt, Tiếng Anh, Tiếng Đức, Tiếng Hàn, Tiếng Nhật, Tiếng Trung,...
+- Đa Ngôn Ngữ: Tiếng Việt, Tiếng Anh, Tiếng Đức, Tiếng Hàn, Tiếng Nhật, Tiếng Trung,... | 🇻🇳 🇺🇸 🇩🇪 🇰🇷 🇯🇵 🇨🇳
 - Toggle Dark Mode / Light Mode ☀️🌙
 - Chuyển Trang bằng Giọng Nói 🗣📢
 - Responsive Website và Mobile 🖥️💻📱
