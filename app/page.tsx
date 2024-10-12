@@ -11,6 +11,7 @@ import { ThemeProvider } from 'next-themes';
 
 import dynamic from "next/dynamic";
 import Reviews from "./reviews-section/ReviewGrid";
+import Recorder from "./Recorder";
 
 import './globals.css';
 
@@ -60,6 +61,7 @@ export default function Home() {
         <main className="flex flex-col items-center justify-center">
           <Hero />
           {/* <LanguageSelector/> */}
+          <Recorder />
           <Mongo/>
           <AboutMe/>
           <Work />
