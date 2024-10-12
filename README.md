@@ -26,7 +26,7 @@
 - Redux ⚛️
 - Tailwind CSS ≈
 - Framer Motion  
-- GSAP
+- GSAP 🦸🏻‍♂️
 - Docker 🐳
 - Github Calendar / Github Graph 📅📈
 - Gửi Email 📧
