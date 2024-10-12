@@ -28,7 +28,7 @@
 - Framer Motion  
 - GSAP
 - Docker 🐳
-- Github Calendar / Github Graph
+- Github Calendar / Github Graph 📅📈
 - Gửi Email
 - Fetch API bằng Axios
 - [MongoDB (Dùng MongoDB Atlas)](https://account.mongodb.com/account/login?nds=true)
