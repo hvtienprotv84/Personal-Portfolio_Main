@@ -20,7 +20,7 @@
 </div>  
 
 
-- ReactJS  
+- ReactJS ⚛
 - NextJS
 - TypeScript
 - Redux
