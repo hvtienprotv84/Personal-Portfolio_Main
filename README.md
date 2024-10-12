@@ -25,7 +25,7 @@
 - TypeScript 🇹🇸
 - Redux ⚛️
 - Tailwind CSS ≈
-- Framer Motion  
+- Framer Motion 🖼️
 - GSAP 🦸🏻‍♂️
 - Docker 🐳
 - Github Calendar / Github Graph 📅📈
