@@ -24,7 +24,7 @@
 - NextJS 🇳
 - TypeScript 🇹🇸
 - Redux ⚛️
-- Tailwind CSS 
+- Tailwind CSS ≈
 - Framer Motion  
 - GSAP
 - Docker 🐳
