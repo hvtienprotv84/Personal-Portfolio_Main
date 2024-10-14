@@ -40,7 +40,7 @@ const Recorder = () => {
     };
 
     return (
-        <div>
+        <div className="fixed top-2 z-50">
             <button onClick={startListening} disabled={isListening}>
                 {isListening ? 'Listening...' : 'Start Listening'}
             </button>
