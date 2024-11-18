@@ -286,7 +286,7 @@ const Hero = () => {
               textColor  
             )}
           >
-            Tôi sinh sống và làm việc tại &nbsp;
+            hiện sinh sống và làm việc tại &nbsp;
             <Image
               src={vietnam}
               priority
