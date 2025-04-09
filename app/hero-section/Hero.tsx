@@ -7,6 +7,7 @@ import { imageAnimation, bodyAnimation } from "../animations/animations";
 import AnimatedWords from "../animations/AnimatedWords";
 import profile from "../../public/hero.png";
 import vietnam from "./vietnam.png";
+import getapp from "../../public/android-phone2.png";
 import './style.css'
 import { Text } from '../Text';
 import LanguageSelector from '../containers/LanguageSelector';
@@ -47,7 +48,7 @@ const Hero = () => {
       <div className="absolute top-10 flex justify-between sm:w-[90%] lg:max-w-[1440px]">
         <div>
           <Link
-            href="https://zalo.me/0931103224"
+            href="https://zalo.me/0797919840"
             target="_blank"
             aria-label="BOOK A CALL"
           >
@@ -62,6 +63,7 @@ const Hero = () => {
             </motion.button>
           </Link>
         </div>
+        
 
         <div className="gap-10 lg:flex text-[#e4ded7] sm:gap-12 md:gap-14 lg:gap-14">
         {/* <motion.p
@@ -166,20 +168,27 @@ const Hero = () => {
             </motion.p>
           </Link>
           <Link
-            href="/"
+            href="https://download-apk-main.vercel.app/"
             target="_blank"
             aria-label="View Contra Profile"
             className='h-fit'
           >
+            <motion.div className='flex flex-row items-center justify-center lg:mt-[0px] mt-[20px]' variants={bodyAnimation}>
+            <Image
+              src={getapp}
+              alt="getapp"
+              className="w-[30px] lg:mt-[0px] rounded-[16px] md:w-[200px] md:rounded-[32px] lg:w-[30px]"
+            />
             <motion.p
               className={clsx(
-                'text-[16px] font-bold md:text-[16px] hidden lg:block',
+                'text-[16px] font-bold md:text-[16px] lg:block',
                 textColor // Sử dụng state để đảm bảo đồng bộ
               )}
               variants={bodyAnimation}
             >
-              Gmail
+              Get App
             </motion.p>
+            </motion.div>
           </Link>
 
             {/* <Link
@@ -219,7 +228,7 @@ const Hero = () => {
             </motion.p>
 
             <motion.p
-              className="text-[16px] font-bold text-[#e4ded7] mt-[-100px] lg:mt-[0px] md:text-[16px]"
+              className="text-[16px] font-bold text-[#e4ded7] mt-[-150px] lg:mt-[0px] md:text-[16px]"
               variants={bodyAnimation}
             >
               <ButtonToggle/>
