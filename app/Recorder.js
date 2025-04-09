@@ -50,7 +50,7 @@ const Recorder = () => {
     };
 
     return (
-        <div className="fixed top-[100px] font-sans font-bold right-[85px] z-50">
+        <div className="fixed top-[120px] lg:top-[100px] font-sans font-bold lg:right-[85px] right-[120px] z-50">
             <button onClick={startListening} disabled={isListening}>
             <div className='flex flex-row justify-center items-center'>
                 <img className='w-[30px]' src='https://cdn.pixabay.com/animation/2023/10/03/13/05/13-05-39-823_512.gif' alt=''/>
